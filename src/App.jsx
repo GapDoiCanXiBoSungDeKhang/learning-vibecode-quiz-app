@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, AlertCircle, Play, Check } from 'lucide-react';
 
-// DỮ LIỆU CÂU HỎI MẪU
-// BẠN HÃY THAY THẾ CÁC CÂU HỎI TỪ GOOGLE FORM CỦA BẠN VÀO ĐÂY
+// DỮ LIỆU CÂU HỎI MẪU TỪ GOOGLE FORM CỦA BẠN
 const questionsData = [
   {
     "id": 1,
@@ -668,15 +667,40 @@ const questionsData = [
 
 export default function App() {
   const [started, setStarted] = useState(false);
+  const [currentQuestions, setCurrentQuestions] = useState(questionsData); // Lưu mảng câu hỏi sau khi đã được đảo ngẫu nhiên
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
 
-  const currentQuestion = questionsData[currentIndex];
+  // HÀM ĐẢO NGẪU NHIÊN: CẢ CÂU HỎI VÀ ĐÁP ÁN BÊN TRONG NÓ
+  const shuffleData = () => {
+    // 1. Sao chép và đảo vị trí các câu hỏi
+    let shuffledQs = [...questionsData];
+    for (let i = shuffledQs.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledQs[i], shuffledQs[j]] = [shuffledQs[j], shuffledQs[i]];
+    }
+
+    // 2. Với mỗi câu hỏi, đảo luôn vị trí 4 đáp án
+    shuffledQs = shuffledQs.map(q => {
+      let shuffledOpts = [...q.options];
+      for (let i = shuffledOpts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledOpts[i], shuffledOpts[j]] = [shuffledOpts[j], shuffledOpts[i]];
+      }
+      return { ...q, options: shuffledOpts };
+    });
+
+    return shuffledQs;
+  };
+
+  const currentQuestion = currentQuestions[currentIndex];
   const hasAnswered = answers[currentIndex] !== undefined;
   const currentAnswer = answers[currentIndex];
 
   const handleStart = () => {
+    // Gọi hàm đảo câu hỏi và đáp án trước khi bắt đầu
+    setCurrentQuestions(shuffleData());
     setStarted(true);
   };
 
@@ -694,18 +718,22 @@ export default function App() {
   };
 
   const handleNext = () => {
-    if (currentIndex < questionsData.length - 1) {
+    if (currentIndex < currentQuestions.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
       setShowResults(true);
+      window.scrollTo(0, 0); // Tự động cuộn lên đầu khi hiện kết quả
     }
   };
 
   const handleRestart = () => {
-    setStarted(false);
+    // Khi người dùng làm lại, tự động tạo bộ đề mới trộn và vào thẳng câu 1
+    setCurrentQuestions(shuffleData());
     setCurrentIndex(0);
     setAnswers({});
     setShowResults(false);
+    setStarted(true); 
+    window.scrollTo(0, 0); // Tự động cuộn lên đầu
   };
 
   // MÀN HÌNH BẮT ĐẦU
@@ -724,7 +752,7 @@ export default function App() {
             <ul className="text-slate-600 space-y-3 mb-8 w-full max-w-sm">
               <li className="flex items-center gap-2"><Check className="w-5 h-5 text-green-500" /> Trả lời xong sẽ biết đúng/sai ngay</li>
               <li className="flex items-center gap-2"><Check className="w-5 h-5 text-green-500" /> Có lời giải thích chi tiết cho từng câu</li>
-              <li className="flex items-center gap-2"><Check className="w-5 h-5 text-green-500" /> Xem lại các câu sai ở cuối bài</li>
+              <li className="flex items-center gap-2"><Check className="w-5 h-5 text-green-500" /> <span className="font-semibold text-blue-700">Đảo câu hỏi và đáp án mỗi lần thi</span></li>
             </ul>
             <button
               onClick={handleStart}
@@ -742,9 +770,9 @@ export default function App() {
   // MÀN HÌNH KẾT QUẢ VÀ XEM LẠI
   if (showResults) {
     const correctCount = Object.values(answers).filter(a => a.isCorrect).length;
-    const totalQuestions = questionsData.length;
+    const totalQuestions = currentQuestions.length;
     const scorePercentage = Math.round((correctCount / totalQuestions) * 100);
-    const wrongQuestions = questionsData.filter((_, idx) => !answers[idx]?.isCorrect);
+    const wrongQuestions = currentQuestions.filter((_, idx) => !answers[idx]?.isCorrect);
 
     return (
       <div className="min-h-screen bg-slate-50 py-10 px-4 font-sans text-slate-800">
@@ -787,7 +815,7 @@ export default function App() {
               className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl transition-all shadow-md"
             >
               <RotateCcw className="w-5 h-5" />
-              Làm lại bài
+              Làm lại bài (Đảo lại đề)
             </button>
           </div>
 
@@ -801,7 +829,7 @@ export default function App() {
 
               <div className="space-y-8">
                 {wrongQuestions.map((q) => {
-                  const qIndex = questionsData.findIndex(item => item.id === q.id);
+                  const qIndex = currentQuestions.findIndex(item => item.id === q.id);
                   const userAnswerIdx = answers[qIndex]?.selected;
 
                   return (
@@ -852,13 +880,13 @@ export default function App() {
         {/* Progress Bar */}
         <div className="mb-6">
           <div className="flex justify-between text-sm font-medium text-slate-500 mb-2">
-            <span>Câu hỏi {currentIndex + 1} / {questionsData.length}</span>
-            <span>{Math.round(((currentIndex) / questionsData.length) * 100)}% Hoàn thành</span>
+            <span>Câu hỏi {currentIndex + 1} / {currentQuestions.length}</span>
+            <span>{Math.round(((currentIndex) / currentQuestions.length) * 100)}% Hoàn thành</span>
           </div>
           <div className="w-full bg-slate-200 rounded-full h-2.5">
             <div
               className="bg-blue-600 h-2.5 rounded-full transition-all duration-500"
-              style={{ width: `${((currentIndex) / questionsData.length) * 100}%` }}
+              style={{ width: `${((currentIndex) / currentQuestions.length) * 100}%` }}
             ></div>
           </div>
         </div>
@@ -960,7 +988,7 @@ export default function App() {
                   cursor: 'pointer', border: 'none', fontSize: '1rem'
                 }}
               >
-                {currentIndex < questionsData.length - 1 ? (
+                {currentIndex < currentQuestions.length - 1 ? (
                   <>Câu tiếp theo <ArrowRight className="w-5 h-5" /></>
                 ) : (
                   <>Xem kết quả <CheckCircle2 className="w-5 h-5" /></>
