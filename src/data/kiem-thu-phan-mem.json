@@ -14,7 +14,7 @@
         { "text": "Test tĩnh là một cách ít tốn kém để phát hiện và loại bỏ lỗi", "isCorrect": true },
         { "text": "Kiểm thử tĩnh có ít giá trị hơn vì kiểm thử động tìm ra lỗi tốt hơn", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Kiểm thử tĩnh (như review, inspection) được thực hiện sớm trong vòng đời phát triển mà không cần chạy code, giúp phát hiện lỗi sớm ở tài liệu, thiết kế. Do đó, chi phí để sửa chữa thấp hơn nhiều so với việc phát hiện lỗi ở giai đoạn kiểm thử động."
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
         { "text": "3", "isCorrect": false },
         { "text": "5", "isCorrect": false }
       ],
-      "explanation": "< 2 năm: không có thưởng | 2–<5 năm: 10% | 5–10 năm: 25% | >10 năm: 35% → 4 phân vùng."
+      "explanation": "< 2 năm: không có thưởng | 2–<5 năm: 10% | 5–10 năm: 25% | >10 năm: 35% → Tổng cộng có 4 phân vùng."
     },
     {
       "id": 3,
@@ -102,7 +102,7 @@
         { "text": "Nó cho phép xác định các thay đổi trong yêu cầu của người dùng.", "isCorrect": false },
         { "text": "Nó cho phép người kiểm thử sớm tham gia vào dự án", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Xác minh sớm giúp phát hiện lỗi ngay từ khâu lấy yêu cầu hay thiết kế. Nếu để lọt, một lỗi thiết kế sẽ kéo theo vô số lỗi lập trình, dẫn đến sự gia tăng lỗi theo cấp số nhân (defect multiplication) ở các giai đoạn sau."
     },
     {
       "id": 10,
@@ -124,7 +124,7 @@
         { "text": "Kiểm thử sau khi phát hành được thực hiện bởi người dùng cuối", "isCorrect": false },
         { "text": "Kiểm thử trước khi phát hành được thực hiện bởi nhóm đại diện người dùng", "isCorrect": true }
       ],
-      "explanation": ""
+      "explanation": "Kiểm thử Alpha thường được thực hiện tại môi trường của công ty phát triển bởi một nhóm đại diện người dùng cuối hoặc đội ngũ chuyên gia nội bộ giả lập hành vi người dùng thực, trước khi tung ra phiên bản Beta."
     },
     {
       "id": 12,
@@ -168,7 +168,7 @@
         { "text": "Không thực tế", "isCorrect": true },
         { "text": "Kiểm thử để phát hiện hết các lỗi", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Trong thực tế, số lượng các kết hợp đầu vào, điều kiện và đường dẫn thực thi là quá lớn (thậm chí vô hạn). Do đó, việc kiểm tra toàn diện mọi trường hợp (exhaustive testing) là bất khả thi và không thực tế, nên cần áp dụng các kỹ thuật thiết kế test case."
     },
     {
       "id": 16,
@@ -267,7 +267,7 @@
         { "text": "Để chia các giá trị đầu vào thành các lớp tương đương nhằm giảm số ca kiểm thử", "isCorrect": true },
         { "text": "Để đánh giá sự tương đương của các phiên bản phần mềm khác nhau", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Phân vùng tương đương (Equivalence Partitioning) chia tập dữ liệu đầu vào thành các lớp có hành vi tương tự nhau. Việc chọn một đại diện từ mỗi lớp giúp giảm đáng kể số lượng test case mà vẫn đảm bảo độ bao phủ."
     },
     {
       "id": 25,
@@ -278,7 +278,7 @@
         { "text": "Kiểm thử tích hợp", "isCorrect": true },
         { "text": "Kiểm thử chấp nhận", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Quy trình chuẩn của các mức kiểm thử (Test Levels) đi từ dưới lên: Kiểm thử đơn vị (Unit) -> Kiểm thử tích hợp (Integration) -> Kiểm thử hệ thống (System) -> Kiểm thử chấp nhận (Acceptance)."
     },
     {
       "id": 26,
@@ -289,7 +289,7 @@
         { "text": "Chứng minh tính bảo mật của hệ thống", "isCorrect": false },
         { "text": "Chứng minh tính tích hợp của hệ thống", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Kiểm thử chấp nhận (UAT) do khách hàng/người dùng thực hiện để đánh giá xem hệ thống có đáp ứng các yêu cầu kinh doanh đã thoả thuận và có sẵn sàng để đưa vào sử dụng thực tế hay không."
     },
     {
       "id": 27,
@@ -333,7 +333,7 @@
         { "text": "Đây là một thước đo được sử dụng để tính toán và đo lường tỷ lệ phần trăm các test case đã được thực thi", "isCorrect": false },
         { "text": "Đây là một thước đo được sử dụng để tính toán và đo lường số lượng câu lệnh trong code đã được thực thi bởi các test case có kết quả pass", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Phủ lệnh (Statement coverage) là thước đo độ bao phủ trong kiểm thử hộp trắng, được tính bằng công thức: (Số lượng lệnh đã được thực thi / Tổng số lệnh) * 100%."
     },
     {
       "id": 31,
@@ -344,7 +344,7 @@
         { "text": "Mục đích của kiểm thử phần mềm là chứng minh rằng sản phẩm phần mềm không có lỗi", "isCorrect": false },
         { "text": "Đối với một hệ thống phần mềm, thông thường không thể kiểm tra tất cả các kết hợp đầu vào và đầu ra.", "isCorrect": true }
       ],
-      "explanation": ""
+      "explanation": "Đây là nguyên lý 'Kiểm thử toàn diện là không thể' (Exhaustive testing is impossible). Thay vào đó, kiểm thử nên dựa trên việc đánh giá rủi ro và xác định độ ưu tiên."
     },
     {
       "id": 32,
@@ -399,7 +399,7 @@
         { "text": "Có thể khó lặp lại bài kiểm thử", "isCorrect": false },
         { "text": "Chúng ta không thể nhập tự động đầu vào của người dùng", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Kết quả mong đợi (Expected result) là tiêu chí để so sánh với kết quả thực tế (Actual result). Nếu thiếu nó, tester sẽ không có cơ sở khách quan để đánh giá xem test case đó Pass hay Fail."
     },
     {
       "id": 37,
@@ -410,7 +410,7 @@
         { "text": "Chỉ quan trọng trong kiểm thử hệ thống", "isCorrect": false },
         { "text": "Hữu ích nhất khi được xác định trước", "isCorrect": true }
       ],
-      "explanation": ""
+      "explanation": "Kết quả mong đợi nên được định nghĩa ngay từ giai đoạn thiết kế test case, dựa trên tài liệu đặc tả, trước khi chạy test để tránh sự ngộ nhận kết quả khi phần mềm chạy."
     },
     {
       "id": 38,
@@ -421,7 +421,7 @@
         { "text": "Review không thể thực hiện dựa trên thông số kỹ thuật yêu cầu của người dùng.", "isCorrect": false },
         { "text": "Review là cách kiểm tra mã kém hiệu quả nhất.", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Review là một hình thức kiểm thử tĩnh, có thể áp dụng cho bất kỳ sản phẩm công việc (work product) nào trong dự án như tài liệu yêu cầu, mã nguồn (Code) và cả tài liệu kiểm thử (Test plan, Test case)."
     },
     {
       "id": 39,
@@ -432,7 +432,7 @@
         { "text": "Hết thời gian", "isCorrect": false },
         { "text": "Không tìm thấy lỗi nào nữa", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Việc kiểm thử không bao giờ có thể chứng minh phần mềm hết hoàn toàn lỗi. Nó kết thúc khi đạt được các tiêu chí dừng (Exit criteria) đã đề ra, ví dụ như độ tin cậy và chất lượng phần mềm đạt ngưỡng cho phép."
     },
     {
       "id": 40,
@@ -443,7 +443,7 @@
         { "text": "Chứng minh hệ thống không còn lỗi", "isCorrect": false },
         { "text": "Chứng minh tính thỏa mãn tất cả yêu cầu của khách hàng và khách hàng chấp nhận sản phẩm", "isCorrect": true }
       ],
-      "explanation": ""
+      "explanation": "Mục tiêu quan trọng nhất của Acceptance Testing (Kiểm thử chấp nhận) là lấy được sự đồng ý, nghiệm thu (sign-off) từ khách hàng rằng sản phẩm đã sẵn sàng đưa vào sử dụng thực tế."
     },
     {
       "id": 41,
@@ -453,7 +453,7 @@
         { "text": "2 test case để phủ các dòng lệnh, 2 test case để phủ nhánh", "isCorrect": false },
         { "text": "1 test case để phủ các dòng lệnh, 2 test case để phủ nhánh", "isCorrect": true }
       ],
-      "explanation": "Cần 1 test case đi vào nhánh IF để phủ toàn bộ lệnh. Cần 2 test case (outlook xuất hiện và không xuất hiện) để phủ 2 nhánh."
+      "explanation": "Cần 1 test case đi vào nhánh IF để phủ toàn bộ lệnh. Cần 2 test case (outlook xuất hiện và không xuất hiện) để phủ 2 nhánh (True và False)."
     },
     {
       "id": 42,
@@ -464,7 +464,7 @@
         { "text": "Tích hợp sandwich", "isCorrect": false },
         { "text": "Tích hợp theo chiều sâu (deep)", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Trong phương pháp Big Bang Integration Testing, tất cả các module được tích hợp cùng một lúc và kiểm thử như một tổng thể."
     },
     {
       "id": 43,
@@ -475,7 +475,7 @@
         { "text": "Lịch trình và thời hạn", "isCorrect": false },
         { "text": "Môi trường thử nghiệm", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Kế hoạch đảm bảo chất lượng (Quality Assurance Plan) thường là một tài liệu riêng biệt ở cấp độ dự án. Test plan (Kế hoạch kiểm thử) tập trung vào phạm vi, cách tiếp cận, nguồn lực và lịch trình của hoạt động kiểm thử."
     },
     {
       "id": 44,
@@ -530,7 +530,7 @@
         { "text": "Kiểm thử chấp nhận", "isCorrect": false },
         { "text": "Kiểm thử tích hợp", "isCorrect": false }
       ],
-      "explanation": ""
+      "explanation": "Kiểm thử hệ thống (System Testing) kiểm tra một hệ thống đã được tích hợp hoàn chỉnh để xác minh xem nó có đáp ứng được các yêu cầu đã chỉ định (cả chức năng và phi chức năng) hay không."
     }
   ]
 }
