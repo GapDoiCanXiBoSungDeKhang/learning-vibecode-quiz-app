@@ -1049,7 +1049,7 @@
           "isCorrect": true
         },
         {
-          "text": "Kiểm thứ hệ thống sau khi phát hành cho khách hàng",
+          "text": "Kiểm thử hệ thống sau khi phát hành cho khách hàng",
           "isCorrect": false
         },
         {
@@ -1095,7 +1095,7 @@
           "isCorrect": true
         },
         {
-          "text": "Kiểm thứ hiệu suất hệ thống",
+          "text": "Kiểm thử hiệu suất hệ thống",
           "isCorrect": false
         },
         {
@@ -1114,7 +1114,7 @@
       "question": "Phương pháp kiểm thử hộp xám là gì?",
       "options": [
         {
-          "text": "Kết hợp giữa kiểm thủ hộp đen và kiểm thử hộp trắng",
+          "text": "Kết hợp giữa kiểm thử hộp đen và kiểm thử hộp trắng",
           "isCorrect": true
         },
         {
@@ -1153,7 +1153,7 @@
           "isCorrect": false
         }
       ],
-      "explanation": "Kiểm thử thẩm định hướng tới chứng minh cho khách hàng thấy phần mềm hoạt động đúng nghiệp vụ mong đợi."
+      "explanation": "Kiểm thử thẩm định (Validation Testing) hướng tới chứng minh cho khách hàng thấy phần mềm hoạt động đúng nghiệp vụ mong đợi."
     },
     {
       "id": 51,
