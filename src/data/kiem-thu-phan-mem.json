@@ -1042,7 +1042,7 @@
     },
     {
       "id": 46,
-      "question": "Cho đoạn chương trình sau:\nswitch (n % 3) {\n  case 0:\n    cout << "Chia het cho 3";\n    break;\n  case 1:\n  case 2:\n    cout << "Khong chia het cho 3";\n}\nCần tối thiểu bao nhiêu ca kiểm thử để đạt 100% độ bao phủ nhánh?",
+      "question": "Cho đoạn chương trình sau:\nswitch (n % 3) {\n  case 0:\n    cout << 'Chia het cho 3';\n    break;\n  case 1:\n  case 2:\n    cout << 'Khong chia het cho 3';\n}\nCần tối thiểu bao nhiêu ca kiểm thử để đạt 100% độ bao phủ nhánh?",
       "options": [
         {
           "text": "2 ca kiểm thử",
@@ -1203,7 +1203,7 @@
     },
     {
       "id": 53,
-      "question": "Độ phức tạp chu trình (Cyclomatic Complexity) của đoạn mã giả sau là bao nhiêu?\nint i = 1, s = 2;\ndo {\n    s += i;\n    cout << "i = " << i << " => s = " << s << endl;\n} while (i++ < 10);",
+      "question": "Độ phức tạp chu trình (Cyclomatic Complexity) của đoạn mã giả sau là bao nhiêu?\nint i = 1, s = 2;\ndo {\n    s += i;\n    cout << 'i = ' << i << ' => s = ' << s << endl;\n} while (i++ < 10);",
       "options": [
         {
           "text": "3",
@@ -1548,7 +1548,7 @@
     },
     {
       "id": 68,
-      "question": "Kết quả thực thi của đoạn mã kiểm thử JUnit 5 sau đây là gì?\npublic class TestClass {\n    @Test\n    public void testingMethod() {\n        String message = "Test";\n        assertEquals(3, message.length());\n    }\n}",
+      "question": "Kết quả thực thi của đoạn mã kiểm thử JUnit 5 sau đây là gì?\npublic class TestClass {\n    @Test\n    public void testingMethod() {\n        String message = 'Test';\n        assertEquals(3, message.length());\n    }\n}",
       "options": [
         {
           "text": "Ca kiểm thử chạy và báo kết quả thành công (Pass)",
