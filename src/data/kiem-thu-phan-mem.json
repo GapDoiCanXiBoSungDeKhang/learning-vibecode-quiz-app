@@ -1,536 +1,1891 @@
 {
-  "id": "kiem-thu-phan-mem",
-  "title": "Kiểm Thử Phần Mềm",
-  "description": "Tổng hợp các câu hỏi trắc nghiệm ôn tập môn Kiểm thử phần mềm (Software Testing)",
-  "icon": "🐞",
+  "id": "kiem-thu-phan-mem-full-82-cau",
+  "title": "Ngân Hàng Câu Hỏi Kiểm Thử Phần Mềm",
+  "description": "Ngân hàng đầy đủ 82 câu hỏi trắc nghiệm ôn tập Kiểm thử phần mềm bao gồm lý thuyết kiểm thử tĩnh/động, kỹ thuật thiết kế hộp đen/hộp trắng và các bài tập JUnit 5",
+  "icon": "🧪",
   "color": "#10b981",
   "questions": [
     {
       "id": 1,
-      "question": "Phát biểu nào sau đây đúng nhất về kiểm thử tĩnh?",
+      "question": "Mục tiêu quan trọng nhất của việc xác định độ ưu tiên kiểm thử là gì?",
       "options": [
-        { "text": "Kiểm thử động có ít giá trị hơn vì kiểm thử tĩnh tìm ra lỗi tốt hơn", "isCorrect": false },
-        { "text": "Test tĩnh giúp phát hiện sớm các vấn đề về thời gian chạy trong vòng đời", "isCorrect": false },
-        { "text": "Test tĩnh là một cách ít tốn kém để phát hiện và loại bỏ lỗi", "isCorrect": true },
-        { "text": "Kiểm thử tĩnh có ít giá trị hơn vì kiểm thử động tìm ra lỗi tốt hơn", "isCorrect": false }
+        {
+          "text": "Tìm càng nhiều lỗi càng tốt.",
+          "isCorrect": false
+        },
+        {
+          "text": "Test các khu vực rủi ro cao.",
+          "isCorrect": true
+        },
+        {
+          "text": "Đạt được độ bao phủ cao.",
+          "isCorrect": false
+        },
+        {
+          "text": "Cái nào dễ thì test trước.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kiểm thử tĩnh (như review, inspection) được thực hiện sớm trong vòng đời phát triển mà không cần chạy code, giúp phát hiện lỗi sớm ở tài liệu, thiết kế. Do đó, chi phí để sửa chữa thấp hơn nhiều so với việc phát hiện lỗi ở giai đoạn kiểm thử động."
+      "explanation": "Xác định độ ưu tiên kiểm thử (test prioritization) dựa trên rủi ro giúp tối ưu hóa tài nguyên bằng cách tập trung kiểm thử các khu vực có khả năng xảy ra lỗi nghiêm trọng nhất, giảm thiểu rủi ro cho hệ thống sớm nhất có thể."
     },
     {
       "id": 2,
-      "question": "Tiền thưởng được tính theo thời gian làm việc đối với các nhân viên làm việc từ 2 năm trở lên. Tùy thuộc vào thời gian làm việc từ 2 năm đến dưới 5 năm, 5 đến 10 năm hoặc nhiều hơn 10 năm, nhân viên sẽ nhận được tiền thưởng từ 10%, 25% hoặc 35%. Cần bao nhiêu phân vùng tương đương để kiểm tra việc này?",
+      "question": "Kiểm thử được thực hiện đủ khi:",
       "options": [
-        { "text": "2", "isCorrect": false },
-        { "text": "4", "isCorrect": true },
-        { "text": "3", "isCorrect": false },
-        { "text": "5", "isCorrect": false }
+        {
+          "text": "Hết thời gian dành cho dự án.",
+          "isCorrect": false
+        },
+        {
+          "text": "Đạt được các tiêu chí dừng kiểm thử đã xác định trước (hoặc độ tin cậy cần thiết đã đạt).",
+          "isCorrect": true
+        },
+        {
+          "text": "Không tìm thấy lỗi nào nữa khi thực thi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Người dùng sẽ không tìm thấy bất kỳ lỗi nghiêm trọng nào nữa.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "< 2 năm: không có thưởng | 2–<5 năm: 10% | 5–10 năm: 25% | >10 năm: 35% → Tổng cộng có 4 phân vùng."
+      "explanation": "Vì kiểm thử toàn diện là bất khả thi, hoạt động kiểm thử chỉ được xem là đủ khi hệ thống đạt được các tiêu chí dừng (Exit Criteria) đã được định nghĩa và thống nhất trước đó trong Kế hoạch kiểm thử (Test Plan)."
     },
     {
       "id": 3,
-      "question": "Phát biểu nào sau đây về mối quan hệ phủ lệnh và phủ quyết định là đúng?",
+      "question": "Điều nào sau đây mô tả lợi ích chính của việc xác minh (verification) sớm trong vòng đời phát triển?",
       "options": [
-        { "text": "Phủ lệnh mạnh hơn phủ quyết định", "isCorrect": false },
-        { "text": "Không bao giờ đạt được 100% phủ quyết định", "isCorrect": false },
-        { "text": "Phủ lệnh 100% sẽ đảm bảo phủ được 100% phủ quyết định", "isCorrect": false },
-        { "text": "Phủ quyết định mạnh hơn phủ lệnh", "isCorrect": true }
+        {
+          "text": "Nó cho phép xác định các thay đổi trong yêu cầu của người dùng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Nó tạo điều kiện cho việc thiết lập môi trường kiểm thử kịp thời.",
+          "isCorrect": false
+        },
+        {
+          "text": "Nó làm giảm sự gia tăng và lan truyền của lỗi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Nó cho phép người kiểm thử sớm tham gia vào dự án.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Đạt 100% phủ quyết định (decision coverage) đảm bảo luôn đạt được 100% phủ lệnh (statement coverage), do đó nó mạnh hơn."
+      "explanation": "Xác minh (Verification) sớm (như rà soát tài liệu thiết kế, SRS) giúp phát hiện sai sót từ sớm, ngăn chặn lỗi lan truyền hoặc nhân lên (defect propagation) sang các giai đoạn sau, từ đó tiết kiệm tối đa chi phí sửa chữa."
     },
     {
       "id": 4,
-      "question": "Phát biểu nào sau đây đúng với kiểm thử beta?",
+      "question": "Kiểm thử Alpha (Alpha Testing) là:",
       "options": [
-        { "text": "Được thực hiện bởi coder", "isCorrect": false },
-        { "text": "Được thực hiện bởi người dùng cuối", "isCorrect": true },
-        { "text": "Được thực hiện bởi tester", "isCorrect": false },
-        { "text": "Được thực hiện bởi các chuyên gia", "isCorrect": false }
+        {
+          "text": "Kiểm thử sau khi phát hành được thực hiện bởi người dùng cuối.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử đầu tiên được thực hiện trên mã nguồn.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử trước khi phát hành được thực hiện tại nơi phát triển bởi một nhóm đại diện người dùng hoặc khách hàng.",
+          "isCorrect": true
+        },
+        {
+          "text": "Kiểm thử cuối cùng ngay trước khi phát hành ra thị trường.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kiểm thử Beta được thực hiện ở môi trường của người dùng, do chính người dùng cuối thực hiện trước khi phần mềm phát hành rộng rãi."
+      "explanation": "Kiểm thử Alpha là một dạng kiểm thử chấp nhận nội bộ (internal acceptance testing), được thực hiện bởi khách hàng hoặc người dùng tại môi trường của nhà phát triển nhằm kiểm chứng các tính năng trước khi đưa sản phẩm ra môi trường thực tế."
     },
     {
       "id": 5,
-      "question": "Phát biểu nào sau đây mô tả đúng một trong bảy nguyên tắc chính của kiểm thử phần mềm?",
+      "question": "Trong một hệ thống được thiết kế để tính thuế phải trả: Một nhân viên có £4000 tiền lương miễn thuế. £1500 tiếp theo bị đánh thuế 10%. £28000 tiếp theo bị đánh thuế 22%. Bất kỳ số tiền còn lại sẽ bị đánh thuế ở mức 40%. Nhóm nào sau đây sẽ rơi vào cùng một lớp tương đương?",
       "options": [
-        { "text": "Bằng cách sử dụng test tự động, có thể test mọi thứ.", "isCorrect": false },
-        { "text": "Không thể test tất cả các kết hợp tập đầu vào trong một hệ thống.", "isCorrect": true },
-        { "text": "Mục đích của việc kiểm tra là để chứng minh sự vắng mặt của các khiếm khuyết.", "isCorrect": false },
-        { "text": "Với sự hỗ trợ của công cụ, việc kiểm tra toàn diện (exhaustive testing) là khả thi đối với tất cả các phần mềm.", "isCorrect": false }
+        {
+          "text": "£ 4800; £ 14000; £ 28000",
+          "isCorrect": false
+        },
+        {
+          "text": "£ 5200; £ 5500; £ 28000",
+          "isCorrect": false
+        },
+        {
+          "text": "£ 28001; £ 32000; £ 35000",
+          "isCorrect": false
+        },
+        {
+          "text": "£ 5800; £ 28000; £ 32000",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Một trong 7 nguyên tắc là 'Kiểm thử toàn diện là không thể' (Exhaustive testing is impossible)."
+      "explanation": "Các dải lương tương ứng với các lớp tương đương về thuế là: Lớp 1 [0, 4000], Lớp 2 (4000, 5500], Lớp 3 (5500, 33500] (tính bằng 5500 + 28000), và Lớp 4 > 33500. Nhóm các giá trị £5800, £28000, và £32000 đều nằm trọn trong dải lương (5500, 33500] (Lớp 3) nên cùng thuộc một lớp tương đương."
     },
     {
       "id": 6,
-      "question": "Xác minh (verification) là:",
+      "question": "Điều quan trọng nhất về việc thiết kế kiểm thử sớm (early test design) là gì?",
       "options": [
-        { "text": "Kiểm thử xem chúng ta có đang xây dựng hệ thống đúng cách không", "isCorrect": true },
-        { "text": "Kiểm thử xem chúng ta có đang xây dựng hệ thống có phù hợp không", "isCorrect": false },
-        { "text": "Được thực hiện bởi một nhóm kiểm thử độc lập", "isCorrect": false },
-        { "text": "Đảm bảo rằng đó là những gì người dùng thực sự muốn", "isCorrect": false }
+        {
+          "text": "Làm cho việc chuẩn bị kiểm thử dễ dàng hơn.",
+          "isCorrect": false
+        },
+        {
+          "text": "Giúp việc kiểm thử nhanh hơn.",
+          "isCorrect": false
+        },
+        {
+          "text": "Có thể phát hiện sớm và ngăn chặn sự nhân lên của lỗi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Giúp tìm ra tất cả các lỗi trong hệ thống.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Verification: Are we building the product right? (Chúng ta có đang xây dựng hệ thống đúng theo tài liệu đặc tả không)."
+      "explanation": "Thiết kế kiểm thử sớm ngay từ pha phân tích yêu cầu giúp phát hiện các điểm mơ hồ, mâu thuẫn trong đặc tả yêu cầu, từ đó ngăn chặn việc lập trình viên triển khai sai code, chặn đứng lỗi ngay từ trứng nước."
     },
     {
       "id": 7,
-      "question": "Điều quan trọng nhất về thiết kế kiểm thử sớm là",
+      "question": "Phát biểu nào sau đây là phát biểu đúng về kỹ thuật Review?",
       "options": [
-        { "text": "Làm cho việc chuẩn bị kiểm thử dễ dàng hơn.", "isCorrect": false },
-        { "text": "Có thể ngăn chặn sự nhân lên của lỗi", "isCorrect": true },
-        { "text": "Giúp tìm ra tất cả các lỗi", "isCorrect": false },
-        { "text": "Giúp việc kiểm thử nhanh hơn", "isCorrect": false }
+        {
+          "text": "Review không thể thực hiện dựa trên thông số kỹ thuật yêu cầu của người dùng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Review là cách kiểm tra mã nguồn kém hiệu quả nhất.",
+          "isCorrect": false
+        },
+        {
+          "text": "Review không có khả năng tìm ra lỗi trong kế hoạch kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Review được thực hiện dựa theo thông số kỹ thuật, mã nguồn và kế hoạch kiểm thử.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Thiết kế kiểm thử sớm giúp phát hiện các vấn đề trong yêu cầu và thiết kế, từ đó ngăn chặn lỗi lan truyền xuống giai đoạn code."
+      "explanation": "Review là một kỹ thuật kiểm thử tĩnh linh hoạt, có thể áp dụng cho bất kỳ sản phẩm công việc phần mềm nào bao gồm tài liệu đặc tả (SRS), bản vẽ thiết kế, mã nguồn (code) và cả tài liệu kế hoạch kiểm thử (Test Plan)."
     },
     {
       "id": 8,
-      "question": "Mục tiêu quan trọng nhất của việc xác định độ ưu tiên kiểm thử là gì?",
+      "question": "Các ca kiểm thử (test cases) thường được thiết kế khi nào?",
       "options": [
-        { "text": "Test các khu vực rủi ro cao", "isCorrect": true },
-        { "text": "Tìm càng nhiều lỗi càng tốt", "isCorrect": false },
-        { "text": "Đạt được độ bao phủ cao", "isCorrect": false },
-        { "text": "Cái nào dễ thì test trước", "isCorrect": false }
+        {
+          "text": "Khi thực thi kiểm thử trên môi trường.",
+          "isCorrect": false
+        },
+        {
+          "text": "Khi lập kế hoạch kiểm thử tổng thể.",
+          "isCorrect": false
+        },
+        {
+          "text": "Khi cấu hình và thiết lập môi trường kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Khi phân tích và thiết kế kiểm thử.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Test ưu tiên thường dựa trên phân tích rủi ro, nhằm đảm bảo các phần quan trọng nhất (rủi ro cao nhất) được kiểm tra trước."
+      "explanation": "Theo quy trình kiểm thử chuẩn (như ISTQB), các test case được phân tích, định hình và thiết kế chi tiết trong giai đoạn Phân tích và Thiết kế kiểm thử (Test Analysis and Design)."
     },
     {
       "id": 9,
-      "question": "Điều nào sau đây mô tả lợi ích chính của việc xác minh (verification) sớm trong vòng đời?",
+      "question": "Nếu kết quả mong đợi (expected result) trong test case không được xác định trước thì điều gì xảy ra?",
       "options": [
-        { "text": "Nó làm giảm sự gia tăng của lỗi", "isCorrect": true },
-        { "text": "Nó tạo điều kiện cho việc thiết lập môi trường kiểm thử kịp thời.", "isCorrect": false },
-        { "text": "Nó cho phép xác định các thay đổi trong yêu cầu của người dùng.", "isCorrect": false },
-        { "text": "Nó cho phép người kiểm thử sớm tham gia vào dự án", "isCorrect": false }
+        {
+          "text": "Chúng ta hoàn toàn không thể chạy kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Có thể khó lặp lại bài kiểm thử trong tương lai.",
+          "isCorrect": false
+        },
+        {
+          "text": "Có thể khó xác định xem kết quả chạy thực tế là đạt hay không đạt.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chúng ta không thể tự động hóa việc nhập đầu vào của người dùng.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Xác minh sớm giúp phát hiện lỗi ngay từ khâu lấy yêu cầu hay thiết kế. Nếu để lọt, một lỗi thiết kế sẽ kéo theo vô số lỗi lập trình, dẫn đến sự gia tăng lỗi theo cấp số nhân (defect multiplication) ở các giai đoạn sau."
+      "explanation": "Kết quả mong đợi là tiêu chuẩn để đối chiếu với kết quả thực tế. Nếu không có kết quả mong đợi được xác định rõ ràng từ trước, kiểm thử viên dễ bị chủ quan chấp nhận kết quả lỗi từ hệ thống và không thể đánh giá chính xác trạng thái Pass/Fail."
     },
     {
       "id": 10,
-      "question": "Lựa chọn nào sau đây được phân loại là kỹ thuật kiểm thử hộp đen?",
+      "question": "Xác minh (Verification) được hiểu là gì?",
       "options": [
-        { "text": "Một kỹ thuật dựa trên phân tích kiến trúc", "isCorrect": false },
-        { "text": "Một kỹ thuật dựa trên kiến thức về lỗi trong quá khứ hoặc kiến thức chung về lỗi", "isCorrect": false },
-        { "text": "Một kỹ thuật dựa trên các đặc tả yêu cầu chính thức", "isCorrect": true },
-        { "text": "Một kỹ thuật kiểm tra xem đối tượng kiểm thử có hoạt động theo thiết kế kỹ thuật hay không", "isCorrect": false }
+        {
+          "text": "Kiểm thử xem chúng ta có đang xây dựng hệ thống phù hợp với mong muốn của khách hàng không.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử xem chúng ta có đang xây dựng hệ thống đúng cách (đúng đặc tả kỹ thuật) không.",
+          "isCorrect": true
+        },
+        {
+          "text": "Hoạt động được thực hiện bởi một nhóm kiểm thử hoàn toàn độc lập.",
+          "isCorrect": false
+        },
+        {
+          "text": "Quá trình đảm bảo rằng đó là những gì người dùng thực sự muốn.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kiểm thử hộp đen (Black-box testing) được thiết kế dựa trên tài liệu đặc tả yêu cầu (Requirements specification)."
+      "explanation": "Xác minh (Verification) trả lời câu hỏi: 'Are we building the product right?' (Chúng ta có đang xây dựng hệ thống đúng cách không), tập trung vào việc đối chiếu sản phẩm với các đặc tả kỹ thuật và tài liệu thiết kế đã đặt ra ở bước trước."
     },
     {
       "id": 11,
-      "question": "Kiểm thử alpha là",
+      "question": "Khi kiểm thử một hệ thống tính điểm, tester xác định rằng tất cả các điểm từ 90 đến 100 sẽ mang lại kết quả A, nhưng điểm dưới 90 sẽ không được điểm A. Phương pháp phân tích này được gọi là gì?",
       "options": [
-        { "text": "Kiểm thử cuối cùng trước khi phát hành", "isCorrect": false },
-        { "text": "Kiểm thử đầu tiên được thực hiện.", "isCorrect": false },
-        { "text": "Kiểm thử sau khi phát hành được thực hiện bởi người dùng cuối", "isCorrect": false },
-        { "text": "Kiểm thử trước khi phát hành được thực hiện bởi nhóm đại diện người dùng", "isCorrect": true }
+        {
+          "text": "Phân vùng tương đương (Equivalence Partitioning)",
+          "isCorrect": true
+        },
+        {
+          "text": "Phân tích giá trị ranh giới (Boundary Value Analysis)",
+          "isCorrect": false
+        },
+        {
+          "text": "Bảng quyết định (Decision Table)",
+          "isCorrect": false
+        },
+        {
+          "text": "Phân tích lai (Hybrid Analysis)",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kiểm thử Alpha thường được thực hiện tại môi trường của công ty phát triển bởi một nhóm đại diện người dùng cuối hoặc đội ngũ chuyên gia nội bộ giả lập hành vi người dùng thực, trước khi tung ra phiên bản Beta."
+      "explanation": "Tester đang phân chia tập dữ liệu đầu vào thành các lớp có tính chất tương đồng: lớp mang lại điểm A [90, 100] và lớp không mang lại điểm A (< 90). Đây là định nghĩa điển hình của phương pháp Phân vùng tương đương."
     },
     {
       "id": 12,
-      "question": "Loại test nào mà không do QC thực hiện.",
+      "question": "Phát biểu nào sau đây đúng với kiểm thử Beta (Beta Testing)?",
       "options": [
-        { "text": "Test hệ thống", "isCorrect": false },
-        { "text": "Test chấp nhận", "isCorrect": true },
-        { "text": "Test bảo mật", "isCorrect": false },
-        { "text": "Test tích hợp", "isCorrect": false }
+        {
+          "text": "Được thực hiện bởi chính lập trình viên phát triển hệ thống.",
+          "isCorrect": false
+        },
+        {
+          "text": "Được thực hiện bởi các chuyên gia tư vấn bảo mật.",
+          "isCorrect": false
+        },
+        {
+          "text": "Được thực hiện trực tiếp bởi khách hàng hoặc người dùng cuối tại môi trường của họ.",
+          "isCorrect": true
+        },
+        {
+          "text": "Được thực hiện bởi đội ngũ kiểm thử (tester) chuyên nghiệp của dự án.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Test chấp nhận (User Acceptance Testing - UAT) do khách hàng hoặc người dùng cuối thực hiện để xác nhận hệ thống."
+      "explanation": "Kiểm thử Beta được thực hiện bởi người dùng cuối hoặc khách hàng tiềm năng tại môi trường thực tế ngoài đời của họ, sau khi sản phẩm đã vượt qua kiểm thử Alpha."
     },
     {
       "id": 13,
-      "question": "Kiểm thử hộp trắng được áp dụng chủ yếu vào giai đoạn nào của kiểm thử phần mềm?",
+      "question": "Phát biểu nào sau đây về các tiêu chuẩn trong Component Testing là sai?",
       "options": [
-        { "text": "Kiểm thử chấp nhận", "isCorrect": false },
-        { "text": "Kiểm thử tích hợp", "isCorrect": false },
-        { "text": "Kiểm thử hệ thống", "isCorrect": false },
-        { "text": "Kiểm thử đơn vị", "isCorrect": true }
+        {
+          "text": "Các kỹ thuật kiểm thử hộp đen đều có một kỹ thuật đo lường liên quan.",
+          "isCorrect": false
+        },
+        {
+          "text": "Các kỹ thuật kiểm thử hộp trắng đều có một kỹ thuật đo lường liên quan.",
+          "isCorrect": false
+        },
+        {
+          "text": "Độ phức tạp chu trình (Cyclomatic Complexity) không phải là một kỹ thuật đo lường kiểm thử.",
+          "isCorrect": true
+        },
+        {
+          "text": "Các kỹ thuật đo lường kiểm thử hộp trắng đều có một kỹ thuật thiết kế kiểm thử liên quan.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kiểm thử hộp trắng chủ yếu được sử dụng ở mức Unit Testing, do Lập trình viên thực hiện dựa trên cấu trúc code."
+      "explanation": "Phát biểu này sai vì Độ phức tạp chu trình (Cyclomatic Complexity) của McCabe là một kỹ thuật đo lường cực kỳ quan trọng trong kiểm thử hộp trắng, xác định số lượng đường đi độc lập tuyến tính qua mã nguồn nhằm thiết kế đủ số lượng ca kiểm thử."
     },
     {
       "id": 14,
-      "question": "Số test case tối thiểu để đạt phủ lệnh 100% cho hàm maxAm là bao nhiêu? (Hàm duyệt mảng tìm số âm lớn nhất, khởi tạo max=0)",
+      "question": "Phát biểu nào sau đây là đúng về kết quả mong đợi (expected result) trong kiểm thử?",
       "options": [
-        { "text": "3", "isCorrect": false },
-        { "text": "2", "isCorrect": false },
-        { "text": "1", "isCorrect": true },
-        { "text": "4", "isCorrect": false }
+        {
+          "text": "Chỉ quan trọng và cần thiết trong kiểm thử hệ thống.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ được sử dụng trong kiểm thử đơn vị (unit testing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Không bao giờ được phép xác định trước khi chạy test.",
+          "isCorrect": false
+        },
+        {
+          "text": "Hữu ích nhất khi được xác định trước khi thực hiện kiểm thử.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Chỉ cần 1 Test Case: a=[-1], n=1 → Sẽ đi qua và thực thi tất cả các lệnh trong hàm."
+      "explanation": "Kết quả mong đợi cần phải được xác định rõ ràng trước khi chạy kiểm thử nhằm đảm bảo tính khách quan và nhất quán của bài test, tránh việc kiểm thử viên bị ảnh hưởng tâm lý bởi kết quả thực tế của chương trình."
     },
     {
       "id": 15,
-      "question": "Kiểm tra toàn diện (exhaustive testing) là",
+      "question": "Cho đoạn chương trình sau:\nIF X < Y\n  THEN Statement 1;\nELSE IF Y >= Z\n  THEN Statement 2;\nEND\nĐộ phức tạp chu trình (Cyclomatic Complexity) của đoạn mã này là bao nhiêu?",
       "options": [
-        { "text": "Không thể thực hiện được", "isCorrect": false },
-        { "text": "Luôn luôn có thể thực hiện", "isCorrect": false },
-        { "text": "Không thực tế", "isCorrect": true },
-        { "text": "Kiểm thử để phát hiện hết các lỗi", "isCorrect": false }
+        {
+          "text": "2",
+          "isCorrect": false
+        },
+        {
+          "text": "3",
+          "isCorrect": true
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "text": "5",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Trong thực tế, số lượng các kết hợp đầu vào, điều kiện và đường dẫn thực thi là quá lớn (thậm chí vô hạn). Do đó, việc kiểm tra toàn diện mọi trường hợp (exhaustive testing) là bất khả thi và không thực tế, nên cần áp dụng các kỹ thuật thiết kế test case."
+      "explanation": "Đoạn mã có 2 nút điều kiện quyết định là 'X < Y' và 'Y >= Z'. Theo công thức M = P + 1 (với P là số câu lệnh điều kiện), M = 2 + 1 = 3."
     },
     {
       "id": 16,
-      "question": "Phát biểu nào sau đây không phải là nguyên tắc kiểm thử",
+      "question": "Chúng ta có thể tìm thấy các tiêu chí hoặc điều kiện dừng kiểm thử (Exit Criteria) trong tài liệu nào?",
       "options": [
-        { "text": "Nghịch lý thuốc trừ sâu", "isCorrect": false },
-        { "text": "Kiểm càng sớm càng tốt", "isCorrect": false },
-        { "text": "Phải kiểm thử tất cả", "isCorrect": true },
-        { "text": "Không thể chứng minh là không có lỗi", "isCorrect": false }
+        {
+          "text": "Báo cáo kết quả kiểm thử (Test Summary Report)",
+          "isCorrect": false
+        },
+        {
+          "text": "Bộ ca kiểm thử (Test Suite)",
+          "isCorrect": false
+        },
+        {
+          "text": "Kịch bản kiểm thử (Test Case)",
+          "isCorrect": false
+        },
+        {
+          "text": "Kế hoạch kiểm thử (Test Plan)",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Nguyên tắc là 'Kiểm thử toàn diện/tất cả là không thể'."
+      "explanation": "Mọi kế hoạch về thời gian dừng, độ bao phủ tối thiểu hay tỷ lệ lỗi tối đa được chấp nhận để kết thúc hoạt động kiểm thử đều phải được ghi nhận rõ ràng trong Kế hoạch kiểm thử (Test Plan)."
     },
     {
       "id": 17,
-      "question": "Mục đích của điều kiện dừng trong kế hoạch kiểm thử là gì?",
+      "question": "Sau giai đoạn nào trong vòng đời phát triển phần mềm thì chúng ta có thể tiến hành kiểm thử hộp trắng (White-box testing)?",
       "options": [
-        { "text": "Lập kế hoạch khi nào dừng chương trình", "isCorrect": false },
-        { "text": "Để biết khi nào việc lập kế hoạch kiểm thử hoàn tất", "isCorrect": false },
-        { "text": "Để biết khi nào một bài kiểm thử cụ thể đã kết thúc quá trình thực hiện", "isCorrect": false },
-        { "text": "Để đảm bảo rằng đã kiểm thử đầy đủ theo yêu cầu", "isCorrect": true }
+        {
+          "text": "Sau giai đoạn mã hóa (Coding).",
+          "isCorrect": true
+        },
+        {
+          "text": "Sau giai đoạn thiết kế (Design).",
+          "isCorrect": false
+        },
+        {
+          "text": "Sau khi tạo tài liệu đặc tả yêu cầu (SRS).",
+          "isCorrect": false
+        },
+        {
+          "text": "Sau giai đoạn cài đặt hệ thống (Deployment).",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Điều kiện dừng (Exit criteria) xác định khi nào hoạt động kiểm thử được coi là đủ và có thể kết thúc."
+      "explanation": "Kiểm thử hộp trắng tập trung vào cấu trúc bên trong của mã nguồn (nhánh rẽ, dòng lệnh, luồng dữ liệu). Vì vậy, hoạt động này chỉ có thể thực hiện sau khi mã nguồn thực tế đã được lập trình xong (giai đoạn Coding)."
     },
     {
       "id": 18,
-      "question": "Số test case tối thiểu để đạt được phủ cấp 3 (Condition coverage) cho hàm maxAm là bao nhiêu?",
+      "question": "Lý do chính để tiến hành kiểm thử phần mềm một cách kỹ lưỡng trước khi phát hành là gì?",
       "options": [
-        { "text": "3", "isCorrect": false },
-        { "text": "1", "isCorrect": false },
-        { "text": "2", "isCorrect": false },
-        { "text": "4", "isCorrect": true }
+        {
+          "text": "Để chứng minh rằng hệ thống chắc chắn hoạt động hoàn hảo sau khi phát hành.",
+          "isCorrect": false
+        },
+        {
+          "text": "Để quyết định thời điểm phần mềm đã đạt chất lượng cao nhất.",
+          "isCorrect": false
+        },
+        {
+          "text": "Để tìm ra toàn bộ các lỗi tồn tại trong hệ thống trước khi bàn giao.",
+          "isCorrect": false
+        },
+        {
+          "text": "Để cung cấp thông tin chất lượng nhằm hỗ trợ đưa ra quyết định dựa trên rủi ro về việc có phát hành hay không.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Cần 4 Test Case để phủ True/False cho từng điều kiện con: a[i]<0, max==0, a[i]>max."
+      "explanation": "Kiểm thử cung cấp một bức tranh chân thực về mức độ tin cậy và chất lượng hiện tại của phần mềm, giúp các nhà quản lý cân đối giữa rủi ro lỗi còn sót lại và lợi ích kinh doanh để đưa ra quyết định phát hành sáng suốt."
     },
     {
       "id": 19,
-      "question": "Số test case tối thiểu để phủ 100% nhánh cho hàm maxAm là bao nhiêu?",
+      "question": "Phát biểu nào sau đây là đúng về độ bao phủ kiểm thử (Test Coverage)?",
       "options": [
-        { "text": "3", "isCorrect": false },
-        { "text": "1", "isCorrect": false },
-        { "text": "2", "isCorrect": true },
-        { "text": "4", "isCorrect": false }
+        {
+          "text": "Không có giá trị thực tiễn trong đo lường thử nghiệm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Là một thước đo định lượng về tính kỹ lưỡng (thoroughness) của việc thử nghiệm.",
+          "isCorrect": true
+        },
+        {
+          "text": "Đạt độ bao phủ nhánh 100% là bắt buộc tuyệt đối đối với tất cả mọi phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ có thể áp dụng trong kiểm thử đơn vị hoặc mô-đun, không thể đo lường trong kiểm thử hệ thống.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "TC1: n=0 → vào nhánh loop=false; TC2: a=[-1, 1], n=2 → nhánh if=true & false."
+      "explanation": "Độ bao phủ cho biết tỷ lệ phần trăm các thành phần (như dòng lệnh, nhánh rẽ, hoặc các yêu cầu nghiệp vụ) đã được thực thi bởi bộ kiểm thử, phản ánh độ kỹ lưỡng của quá trình kiểm thử phần mềm."
     },
     {
       "id": 20,
-      "question": "Phương pháp test nào mà tất cả các module được tích hợp đồng thời để test.",
+      "question": "Lỗi xuất hiện ở giai đoạn nào sau đây sẽ tốn kém chi phí để khắc phục nhất khi phát hiện muộn?",
       "options": [
-        { "text": "Sandwich testing", "isCorrect": false },
-        { "text": "Bottom-up testing", "isCorrect": false },
-        { "text": "Top-down testing", "isCorrect": false },
-        { "text": "Big-Bang testing", "isCorrect": true }
+        {
+          "text": "Lỗi nằm trong đặc tả chương trình.",
+          "isCorrect": false
+        },
+        {
+          "text": "Lỗi phát sinh trong quá trình viết code.",
+          "isCorrect": false
+        },
+        {
+          "text": "Lỗi nằm trong khâu xác định yêu cầu khách hàng (Requirements).",
+          "isCorrect": true
+        },
+        {
+          "text": "Lỗi phát sinh trong giai đoạn thiết kế kiến trúc.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Big-Bang Testing là chiến lược tích hợp tất cả các module lại với nhau cùng một lúc rồi kiểm thử."
+      "explanation": "Yêu cầu là nền tảng của mọi giai đoạn tiếp theo. Lỗi yêu cầu nếu không được phát hiện sớm sẽ kéo theo thiết kế sai, code sai và viết test case sai, dẫn tới chi phí sửa lỗi tăng vọt theo cấp số nhân khi phát hiện ở giai đoạn cuối."
     },
     {
       "id": 21,
-      "question": "Số đơn đặt hàng trên hệ thống kiểm soát kho có thể bao gồm từ 1000 đến 99999. Đầu vào nào sau đây thuộc cùng 1 lớp tương đương:",
+      "question": "Mục tiêu chính khi thực hiện hoạt động Review một giao phẩm phần mềm là gì?",
       "options": [
-        { "text": "10000, 50000, 999999", "isCorrect": false },
-        { "text": "1000, 5000, 10000", "isCorrect": true },
-        { "text": "9999, 50000, 100000", "isCorrect": false },
-        { "text": "10000, 999999", "isCorrect": false }
+        {
+          "text": "Để xác định các lỗi tiềm ẩn bằng cách sử dụng đặc tả kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Để phát hiện sớm các khiếm khuyết (defects) trong bất kỳ sản phẩm công việc phần mềm nào.",
+          "isCorrect": true
+        },
+        {
+          "text": "Để tìm ra các lỗi chính tả đơn giản trong tài liệu yêu cầu.",
+          "isCorrect": false
+        },
+        {
+          "text": "Để xác định các đoạn mã viết chưa tối ưu so với tiêu chuẩn.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "1000, 5000 và 10000 đều nằm trong cùng một lớp hợp lệ (từ 1000 đến 99999)."
+      "explanation": "Mục tiêu tối thượng của Review (kiểm thử tĩnh) là kiểm tra, phát hiện các khiếm khuyết trong các sản phẩm công việc (SRS, thiết kế, code, kế hoạch) ngay từ giai đoạn đầu để xử lý kịp thời."
     },
     {
       "id": 22,
-      "question": "Nội dung nào sau đây KHÔNG có trong tài liệu test plan:",
+      "question": "Việc xác định các tiêu chí dừng kiểm thử (Exit Criteria) được tiến hành vào thời điểm nào?",
       "options": [
-        { "text": "Môi trường thử nghiệm", "isCorrect": false },
-        { "text": "Những gì không được kiểm tra", "isCorrect": false },
-        { "text": "Báo cáo kết quả test", "isCorrect": true },
-        { "text": "Lịch trình và thời hạn", "isCorrect": false }
+        {
+          "text": "Trong quá trình Lập kế hoạch kiểm thử (Test Planning).",
+          "isCorrect": true
+        },
+        {
+          "text": "Khi tiến hành đánh giá kết quả chạy thử và viết báo cáo tổng kết.",
+          "isCorrect": false
+        },
+        {
+          "text": "Khi đóng và kết thúc quá trình kiểm thử dự án.",
+          "isCorrect": false
+        },
+        {
+          "text": "Trong khi thực hiện kiểm soát và giám sát quá trình kiểm thử.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Báo cáo kết quả test được tạo ra sau khi thực thi kiểm thử, không nằm trong tài liệu lập kế hoạch ban đầu."
+      "explanation": "Các tiêu chí dừng kiểm thử cần phải được định rõ ngay từ bước Lập kế hoạch kiểm thử để làm căn cứ thống nhất cho tất cả các hoạt động đánh giá sau này."
     },
     {
       "id": 23,
-      "question": "Kiểm thử hệ thống (System Testing) được thực hiện trước khi:",
+      "question": "Cho đoạn mã sau:\nif width > length\nthen\n    biggest_dimension = width\n    if height > width then\n        biggest_dimension = height\n    end_if\nelse\n    biggest_dimension = length\n    if height > length then\n        biggest_dimension = height\n    end_if\nend_if\nCần tối thiểu bao nhiêu ca kiểm thử (test cases) để đạt 100% độ bao phủ quyết định (decision coverage)?",
       "options": [
-        { "text": "Kiểm thử tích hợp", "isCorrect": false },
-        { "text": "Kiểm thử module", "isCorrect": false },
-        { "text": "Kiểm thử đơn vị", "isCorrect": false },
-        { "text": "Kiểm thử chấp nhận", "isCorrect": true }
+        {
+          "text": "1",
+          "isCorrect": false
+        },
+        {
+          "text": "2",
+          "isCorrect": false
+        },
+        {
+          "text": "3",
+          "isCorrect": false
+        },
+        {
+          "text": "4",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Thứ tự tiêu chuẩn: Unit Testing -> Integration Testing -> System Testing -> Acceptance Testing."
+      "explanation": "Đoạn mã có cấu trúc 'if-else' lớn ngoài cùng và hai cấu trúc 'if' con lồng ở bên trong mỗi nhánh. Để đạt 100% độ bao phủ quyết định, ta cần kiểm tra đầy đủ cả 2 hướng Đúng và Sai của câu lệnh 'if' lớn và các câu lệnh 'if' con bên trong. Điều này đòi hỏi 2 ca kiểm thử cho nhánh 'then' và 2 ca kiểm thử cho nhánh 'else', tổng cộng là 4 ca kiểm thử."
     },
     {
       "id": 24,
-      "question": "Mục đích của việc phân vùng tương đương trong kiểm thử phần mềm là gì?",
+      "question": "Tập hợp các ca kiểm thử (Test Suite) thường được tạo ra trong giai đoạn nào?",
       "options": [
-        { "text": "Để kiểm tra sự tương đương của các thành phần hệ thống", "isCorrect": false },
-        { "text": "Để tìm lỗi trong code", "isCorrect": false },
-        { "text": "Để chia các giá trị đầu vào thành các lớp tương đương nhằm giảm số ca kiểm thử", "isCorrect": true },
-        { "text": "Để đánh giá sự tương đương của các phiên bản phần mềm khác nhau", "isCorrect": false }
+        {
+          "text": "Giai đoạn phân tích yêu cầu phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Giai đoạn lập kế hoạch kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Giai đoạn phát triển ca kiểm thử (Test Case Development).",
+          "isCorrect": true
+        },
+        {
+          "text": "Giai đoạn thiết lập môi trường chạy thử.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Phân vùng tương đương (Equivalence Partitioning) chia tập dữ liệu đầu vào thành các lớp có hành vi tương tự nhau. Việc chọn một đại diện từ mỗi lớp giúp giảm đáng kể số lượng test case mà vẫn đảm bảo độ bao phủ."
+      "explanation": "Sau khi các ca kiểm thử riêng lẻ được thiết kế, chúng sẽ được nhóm lại thành các bộ kiểm thử (Test Suite) phù hợp với mục tiêu chạy thử trong giai đoạn phát triển và chuẩn bị ca kiểm thử."
     },
     {
       "id": 25,
-      "question": "Kiểm thử hệ thống (System Testing) được thực hiện ngay sau khi",
+      "question": "Hoạt động Kiểm thử hệ thống (System Testing) nên tập trung vào:",
       "options": [
-        { "text": "Kiểm thử module", "isCorrect": false },
-        { "text": "Kiểm thử đơn vị", "isCorrect": false },
-        { "text": "Kiểm thử tích hợp", "isCorrect": true },
-        { "text": "Kiểm thử chấp nhận", "isCorrect": false }
+        {
+          "text": "Chỉ kiểm thử các yêu cầu phi chức năng và hoàn toàn bỏ qua các yêu cầu chức năng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ kiểm thử giao diện người dùng mà không cần kết nối cơ sở dữ liệu.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử toàn diện cả các yêu cầu chức năng lẫn phi chức năng của hệ thống.",
+          "isCorrect": true
+        },
+        {
+          "text": "Kiểm thử các dòng mã nguồn nội bộ xem có tối ưu hay không.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Quy trình chuẩn của các mức kiểm thử (Test Levels) đi từ dưới lên: Kiểm thử đơn vị (Unit) -> Kiểm thử tích hợp (Integration) -> Kiểm thử hệ thống (System) -> Kiểm thử chấp nhận (Acceptance)."
+      "explanation": "Kiểm thử hệ thống là kiểm thử toàn bộ hệ thống đã được tích hợp hoàn chỉnh, do đó nó phải bao quát việc đánh giá tính đúng đắn của chức năng (Functional) lẫn các đặc tính vận hành như hiệu năng, bảo mật, độ tin cậy (Non-functional)."
     },
     {
       "id": 26,
-      "question": "Mục đích của kiểm thử chấp nhận để làm gì?",
+      "question": "Hoạt động nào sau đây không phải là một mục tiêu trực tiếp của hoạt động kiểm thử phần mềm?",
       "options": [
-        { "text": "Chứng minh hệ thống không còn lỗi", "isCorrect": false },
-        { "text": "Chứng minh tính thỏa mãn tất cả yêu cầu của khách hàng", "isCorrect": true },
-        { "text": "Chứng minh tính bảo mật của hệ thống", "isCorrect": false },
-        { "text": "Chứng minh tính tích hợp của hệ thống", "isCorrect": false }
+        {
+          "text": "Tìm kiếm các khuyết điểm, lỗi của chương trình.",
+          "isCorrect": false
+        },
+        {
+          "text": "Xây dựng niềm tin và sự tự tin về chất lượng phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ngăn ngừa sự phát sinh khiếm khuyết trong các phiên bản sau.",
+          "isCorrect": false
+        },
+        {
+          "text": "Thực hiện gỡ lỗi (Debugging) và sửa chữa mã nguồn trực tiếp.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Kiểm thử chấp nhận (UAT) do khách hàng/người dùng thực hiện để đánh giá xem hệ thống có đáp ứng các yêu cầu kinh doanh đã thoả thuận và có sẵn sàng để đưa vào sử dụng thực tế hay không."
+      "explanation": "Gỡ lỗi (Debugging) là quá trình của nhà phát triển nhằm định vị nguyên nhân gây lỗi và tiến hành sửa lỗi trong mã nguồn. Kiểm thử chỉ có nhiệm vụ phát hiện và báo cáo sự tồn tại của lỗi, chứ không thực hiện sửa lỗi."
     },
     {
       "id": 27,
-      "question": "Mục tiêu chính của kiểm thử tích hợp là gì?",
+      "question": "Thứ tự trạng thái nào sau đây phản ánh chính xác nhất vòng đời của một lỗi (Bug Life Cycle)?",
       "options": [
-        { "text": "Tìm các lỗi thủ tục", "isCorrect": false },
-        { "text": "Tìm các lỗi bảo mật", "isCorrect": false },
-        { "text": "Tìm các lỗi thiết kế", "isCorrect": false },
-        { "text": "Tìm các lỗi giao diện", "isCorrect": true }
+        {
+          "text": "Open -> Assigned -> Fixed -> Closed",
+          "isCorrect": true
+        },
+        {
+          "text": "Open -> Fixed -> Assigned -> Closed",
+          "isCorrect": false
+        },
+        {
+          "text": "Assigned -> Open -> Closed -> Fixed",
+          "isCorrect": false
+        },
+        {
+          "text": "Assigned -> Open -> Fixed -> Closed",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kiểm thử tích hợp tập trung vào các giao tiếp và tương tác (interfaces) giữa các module/thành phần."
+      "explanation": "Vòng đời chuẩn của lỗi bắt đầu khi được ghi nhận và mở ra (Open) -> gán cho lập trình viên xử lý (Assigned) -> lập trình viên thông báo đã sửa xong (Fixed) -> kiểm thử viên xác nhận lại thành công và đóng lỗi (Closed)."
     },
     {
       "id": 28,
-      "question": "Theo kết quả của việc phân tích rủi ro, việc test đang được hướng tới các khu vực của hệ thống được test, nơi mà ban đầu tìm thấy nhiều lỗi hơn mức trung bình. Nguyên tắc kiểm thử nào sau đây đang được áp dụng?",
+      "question": "Phát biểu nào sau đây mô tả về kiểm thử tĩnh (Static testing) là sai?",
       "options": [
-        { "text": "Lỗi thường tập trung", "isCorrect": true },
-        { "text": "Nghịch lý thuốc trừ sâu", "isCorrect": false },
-        { "text": "Test theo ngữ cảnh", "isCorrect": false },
-        { "text": "Không thể chứng minh hết lỗi", "isCorrect": false }
+        {
+          "text": "Kiểm thử tĩnh yêu cầu chạy chương trình và truyền các ca kiểm thử qua mã nguồn.",
+          "isCorrect": true
+        },
+        {
+          "text": "Kiểm thử tĩnh bao gồm kỹ thuật kiểm tra tại bàn (desk checking).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử tĩnh bao gồm các kỹ thuật rà soát tài liệu (review) và thanh tra (inspection).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử tĩnh có thể đưa ra các số đo phân tích cấu trúc như độ phức tạp chu trình.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Nguyên tắc Lỗi thường tập trung (Defect clustering) phát biểu rằng phần lớn các lỗi thường tập trung ở một số ít các module."
+      "explanation": "Đặc trưng lớn nhất của kiểm thử tĩnh là việc phân tích và đánh giá tài liệu hoặc mã nguồn mà không cần chạy chương trình thực tế. Do đó phát biểu nói kiểm thử tĩnh yêu cầu chạy chương trình là sai."
     },
     {
       "id": 29,
-      "question": "Điều nào sau đây không đúng với điều kiện phủ (coverage criteria) của kiểm thử?",
+      "question": "Phát biểu nào sau đây không đúng khi nói về kiểm thử hồi quy (Regression Testing)?",
       "options": [
-        { "text": "Thước đo điều kiện phủ kiểm thử là tỷ lệ phần trăm lệnh được thực thi.", "isCorrect": false },
-        { "text": "Thước đo điều kiện phủ là tỷ lệ phần trăm yêu cầu của người dùng được phủ.", "isCorrect": false },
-        { "text": "Các điều kiện phủ thường được sử dụng khi chỉ định các tiêu chí hoàn thành kiểm thử", "isCorrect": false },
-        { "text": "Cho biết số lỗi còn lại trong hệ thống", "isCorrect": true }
+        {
+          "text": "Để đảm bảo phần mềm sau khi sửa chữa không gặp thêm lỗi mới ở các vùng liên quan.",
+          "isCorrect": false
+        },
+        {
+          "text": "Để đảm bảo các ca kiểm thử mới hoàn toàn không trùng lắp với các ca kiểm thử cũ.",
+          "isCorrect": true
+        },
+        {
+          "text": "Để đảm bảo phiên bản nâng cấp của phần mềm không làm ảnh hưởng xấu đến các chức năng cũ đang hoạt động tốt.",
+          "isCorrect": false
+        },
+        {
+          "text": "Để tiết kiệm công sức so với việc phải thực hiện kiểm thử lại thủ công toàn bộ mọi chức năng của hệ thống.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Độ bao phủ (Coverage) đo lường mã nguồn hoặc yêu cầu đã được test bao nhiêu, chứ không dự đoán được số lỗi còn sót lại."
+      "explanation": "Mục tiêu cốt lõi của kiểm thử hồi quy là đảm bảo các thay đổi mới trong mã nguồn không làm phá vỡ các chức năng cũ. Việc tối ưu hóa trùng lặp giữa các test case không phải là mục tiêu trực tiếp hay định nghĩa của kiểm thử hồi quy."
     },
     {
       "id": 30,
-      "question": "Phát biểu nào sau đây phù hợp nhất về phủ lệnh",
+      "question": "Phát biểu nào sau đây mô tả phù hợp nhất với hoạt động Code Review?",
       "options": [
-        { "text": "Đây là thước đo để xác nhận xem tất cả các câu lệnh có được thực thi hay không.", "isCorrect": false },
-        { "text": "Đây là một thước đo được sử dụng để tính toán và đo lường phần trăm các câu lệnh trong code đã được thực thi.", "isCorrect": true },
-        { "text": "Đây là một thước đo được sử dụng để tính toán và đo lường tỷ lệ phần trăm các test case đã được thực thi", "isCorrect": false },
-        { "text": "Đây là một thước đo được sử dụng để tính toán và đo lường số lượng câu lệnh trong code đã được thực thi bởi các test case có kết quả pass", "isCorrect": false }
+        {
+          "text": "Thực thi các ca kiểm thử tự động để phát hiện các vấn đề của mã lệnh.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chạy thử chương trình bằng tay trên môi trường ảo để tìm lỗi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dựa hoàn toàn vào các biểu đồ dòng dữ liệu tĩnh để dò tìm lỗi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Đọc, đánh giá mã nguồn và đối chiếu với tài liệu thiết kế hoặc chuẩn viết code để xác định điểm chưa đạt.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Phủ lệnh (Statement coverage) là thước đo độ bao phủ trong kiểm thử hộp trắng, được tính bằng công thức: (Số lượng lệnh đã được thực thi / Tổng số lệnh) * 100%."
+      "explanation": "Code Review là một hoạt động kiểm thử tĩnh, trong đó các nhà phát triển hoặc kiểm thử viên đọc trực tiếp mã nguồn để phát hiện lỗi logic, cấu trúc kém hoặc vi phạm các quy tắc lập trình mà không cần chạy chương trình."
     },
     {
       "id": 31,
-      "question": "Câu nào sau đây mô tả nguyên tắc chính của kiểm thử phần mềm?",
+      "question": "Các bước cơ bản của quy trình kiểm thử dòng điều khiển (Control Flow Testing) là gì?",
       "options": [
-        { "text": "Kiểm thử tự động cho phép đưa ra những tuyên bố đáng tin cậy hơn về chất lượng của sản phẩm phần mềm.", "isCorrect": false },
-        { "text": "Kiểm thử phần mềm toàn diện (Exhaustive software testing), với đủ nỗ lực và công cụ hỗ trợ, có thể thực hiện được đối với tất cả phần mềm", "isCorrect": false },
-        { "text": "Mục đích của kiểm thử phần mềm là chứng minh rằng sản phẩm phần mềm không có lỗi", "isCorrect": false },
-        { "text": "Đối với một hệ thống phần mềm, thông thường không thể kiểm tra tất cả các kết hợp đầu vào và đầu ra.", "isCorrect": true }
+        {
+          "text": "Tính độ phức tạp chu trình để xác định đồ thị dòng điều khiển, xác định đường thi hành, rồi viết test case dựa vào các đường đó.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sinh trực tiếp đồ thị các test case từ mã nguồn với độ đo cần kiểm thử và thực thi chúng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sinh đồ thị dòng điều khiển CFG với tiêu chí độ đo cần kiểm thử, sinh các test case trực tiếp, sau đó thực hiện chạy thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Xây dựng đồ thị dòng điều khiển (CFG) theo tiêu chí bao phủ, xác định tập các đường thi hành (execution paths), sinh các ca kiểm thử tương ứng và tiến hành thực thi.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Đây là nguyên lý 'Kiểm thử toàn diện là không thể' (Exhaustive testing is impossible). Thay vào đó, kiểm thử nên dựa trên việc đánh giá rủi ro và xác định độ ưu tiên."
+      "explanation": "Quy trình kiểm thử dòng điều khiển chuẩn gồm 4 bước tuần tự: 1. Tạo đồ thị CFG từ code; 2. Xác định các đường đi độc lập thỏa mãn tiêu chí bao phủ mong muốn; 3. Tạo các ca kiểm thử với dữ liệu cụ thể để đi qua các đường đi này; 4. Chạy các ca kiểm thử và so sánh kết quả."
     },
     {
       "id": 32,
-      "question": "Alpha và Beta testing là hình thức test nào?",
+      "question": "Định nghĩa nào sau đây phản ánh chính xác nhất về khái niệm Ca kiểm thử (Test Case)?",
       "options": [
-        { "text": "Acceptance testing", "isCorrect": true },
-        { "text": "White-box testing", "isCorrect": false },
-        { "text": "Black-box testing", "isCorrect": false },
-        { "text": "System testing", "isCorrect": false }
+        {
+          "text": "Là một cơ chế tự động giúp xác minh tính chính xác của kết quả đầu ra.",
+          "isCorrect": false
+        },
+        {
+          "text": "Là một cơ sở nguyên tắc khoa học về đo lường và thống kê lỗi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Là một tập hợp các giá trị đầu vào và kết quả mong đợi đầu ra để kiểm tra một kịch bản chức năng cụ thể.",
+          "isCorrect": true
+        },
+        {
+          "text": "Là một trạng thái tĩnh hay động cụ thể của hệ thống phần mềm.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Alpha và Beta là các kỹ thuật kiểm thử trong giai đoạn User Acceptance Testing (UAT)."
+      "explanation": "Một ca kiểm thử hoàn chỉnh bắt buộc phải bao gồm dữ liệu đầu vào và kết quả mong đợi đầu ra tương ứng, đi kèm điều kiện chạy thử để so sánh kết quả thực tế."
     },
     {
       "id": 33,
-      "question": "Khi một module cần gọi một module khác chưa được phát triển, người ta sẽ dùng gì để thay thế?",
+      "question": "Phát biểu nào sau đây là đúng khi nói về mối quan hệ giữa Bao phủ dòng lệnh (Statement Coverage) và Bao phủ quyết định (Decision/Branch Coverage)?",
       "options": [
-        { "text": "Mock", "isCorrect": false },
-        { "text": "Stub", "isCorrect": true },
-        { "text": "Driver", "isCorrect": false },
-        { "text": "Proxy", "isCorrect": false }
+        {
+          "text": "Nếu độ bao phủ quyết định đạt 100% thì chắc chắn độ bao phủ dòng lệnh cũng đạt 100%.",
+          "isCorrect": true
+        },
+        {
+          "text": "Nếu độ bao phủ dòng lệnh đạt 100% thì chắc chắn độ bao phủ quyết định cũng đạt 100%.",
+          "isCorrect": false
+        },
+        {
+          "text": "Bao phủ dòng lệnh đạt 50% sẽ luôn đảm bảo bao phủ quyết định đạt được 100%.",
+          "isCorrect": false
+        },
+        {
+          "text": "Bao phủ quyết định đạt 50% sẽ luôn đảm bảo bao phủ dòng lệnh đạt được 100%.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Stub là một đoạn code giả lập cho một module bị gọi (called module) chưa được hoàn thành."
+      "explanation": "Độ bao phủ quyết định (phủ nhánh) có yêu cầu kiểm thử chặt chẽ và mạnh hơn độ bao phủ dòng lệnh. Do đó, khi ta đã đi qua tất cả các nhánh quyết định True/False của hệ thống, toàn bộ mọi câu lệnh trong các nhánh đó chắc chắn đều đã được chạy qua ít nhất một lần."
     },
     {
       "id": 34,
-      "question": "Khi kiểm thử hệ thống tính điểm, tester xác định rằng tất cả các điểm từ 90 đến 100 sẽ mang lại kết quả A, nhưng điểm dưới 90 sẽ không được điểm A. Tester đang áp dụng kỹ thuật nào?",
+      "question": "Hàm tính thưởng dựa trên số năm làm việc: Dưới hoặc bằng 2 năm thưởng 1 triệu; Trên 2 năm đến dưới 5 năm thưởng 2 triệu; Từ 5 năm đến dưới 10 năm thưởng 3 triệu. Để áp dụng phương pháp Phân hoạch tương đương, ta cần bao nhiêu ca kiểm thử?",
       "options": [
-        { "text": "Bảng quyết định", "isCorrect": false },
-        { "text": "Phân vùng tương đương", "isCorrect": true },
-        { "text": "Phân tích giá trị ranh giới", "isCorrect": false },
-        { "text": "Phân tích lại", "isCorrect": false }
+        {
+          "text": "2 ca kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "3 ca kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "4 ca kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "5 ca kiểm thử.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Họ đang chia dữ liệu thành các khối/lớp cho ra cùng một kết quả (A và Không A) là phân vùng tương đương."
+      "explanation": "Ta chia dữ liệu 'Số năm' thành các phân vùng tương đương: 3 vùng hợp lệ: (1) <= 2; (2) từ 2 đến dưới 5; (3) từ 5 đến dưới 10. Đồng thời phải có thêm 2 vùng không hợp lệ để kiểm thử khả năng bẫy lỗi đầu vào: (4) Số năm < 0; (5) Số năm >= 10. Tổng cộng là 5 phân vùng nên cần ít nhất 5 ca kiểm thử."
     },
     {
       "id": 35,
-      "question": "Trong một hệ thống được thiết kế để tính thuế phải trả. Một nhân viên có £4000 tiền lương miễn thuế. £1500 tiếp theo bị đánh thuế 10%. £28000 tiếp theo bị đánh thuế 22%. Bất kỳ số tiền còn lại sẽ bị đánh thuế ở mức 40%. Nhóm nào trong số các nhóm sẽ rơi vào cùng một lớp tương đương?",
+      "question": "Thông tin nào sau đây thường KHÔNG phải là nội dung chính được định nghĩa trong tài liệu Báo cáo kết quả kiểm thử (Test Summary Report)?",
       "options": [
-        { "text": "£28001; £32000; £35000", "isCorrect": false },
-        { "text": "£5200; £5500; £28000", "isCorrect": false },
-        { "text": "£5800; £28000; £32000", "isCorrect": true },
-        { "text": "£4800; £14000; £28000", "isCorrect": false }
+        {
+          "text": "Mục tiêu kiểm thử tổng thể và tiêu chí để đánh giá độ thành công.",
+          "isCorrect": true
+        },
+        {
+          "text": "Các vấn đề xảy ra trong quá trình kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "So sánh tiến trình chạy thực tế so với các tiêu chí đã đặt ra.",
+          "isCorrect": false
+        },
+        {
+          "text": "Đánh giá chất lượng của đối tượng được kiểm thử.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "£5800, £28000, £32000 đều nằm trong cùng lớp thuế 22% [từ £5501 đến £33500]."
+      "explanation": "Mục tiêu kiểm thử tổng thể và tiêu chí dừng/đánh giá được định nghĩa trước tiên trong tài liệu Kế hoạch kiểm thử (Test Plan) chứ không phải là thông tin được sinh ra từ quá trình chạy thử thực tế trong Báo cáo kết quả kiểm thử."
     },
     {
       "id": 36,
-      "question": "Nếu kết quả mong đợi (trong test case) không được xác định thì",
+      "question": "Kiểm thử chức năng (Functional Testing) được thực hiện ở những cấp độ nào?",
       "options": [
-        { "text": "Chúng ta không thể chạy kiểm thử", "isCorrect": false },
-        { "text": "Có thể khó xác định xem bài kiểm thử là đạt hay không đạt", "isCorrect": true },
-        { "text": "Có thể khó lặp lại bài kiểm thử", "isCorrect": false },
-        { "text": "Chúng ta không thể nhập tự động đầu vào của người dùng", "isCorrect": false }
+        {
+          "text": "Chỉ được thực hiện ở mức kiểm thử hệ thống và kiểm thử chấp nhận.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ được thực hiện ở cấp độ kiểm thử đơn vị (Unit Testing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ được thực hiện khi người dùng tiến hành nghiệm thu sản phẩm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Có thể được áp dụng và thực hiện ở tất cả các cấp độ kiểm thử.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Kết quả mong đợi (Expected result) là tiêu chí để so sánh với kết quả thực tế (Actual result). Nếu thiếu nó, tester sẽ không có cơ sở khách quan để đánh giá xem test case đó Pass hay Fail."
+      "explanation": "Kiểm thử chức năng nhằm đánh giá xem phần mềm có hoạt động đúng theo yêu cầu thiết kế hay không, và có thể thực thi ở mọi cấp độ: từ kiểm tra một hàm đơn vị (Unit), tích hợp các hàm (Integration), toàn bộ hệ thống (System) cho tới khi khách hàng nghiệm thu (Acceptance)."
     },
     {
       "id": 37,
-      "question": "Phát biểu nào sau đây đúng về kết quả mong đợi.",
+      "question": "Trong kiểm thử, hoạt động nào dưới đây KHÔNG phải là mục tiêu của kiểm thử?",
       "options": [
-        { "text": "Không bao giờ được xác định trước", "isCorrect": false },
-        { "text": "Chỉ được sử dụng trong kiểm thử đơn vị", "isCorrect": false },
-        { "text": "Chỉ quan trọng trong kiểm thử hệ thống", "isCorrect": false },
-        { "text": "Hữu ích nhất khi được xác định trước", "isCorrect": true }
+        {
+          "text": "Tìm lỗi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Tăng sự tự tin về chất lượng của chương trình.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ngăn chặn lỗi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Tìm nguyên nhân gây lỗi.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Kết quả mong đợi nên được định nghĩa ngay từ giai đoạn thiết kế test case, dựa trên tài liệu đặc tả, trước khi chạy test để tránh sự ngộ nhận kết quả khi phần mềm chạy."
+      "explanation": "Tìm nguyên nhân gây lỗi thuộc về hoạt động Gỡ lỗi (Debugging) được lập trình viên thực hiện sau khi lỗi đã được phát hiện và báo cáo bởi quá trình kiểm thử."
     },
     {
       "id": 38,
-      "question": "Phát biểu nào sau đây là phát biểu đúng về review?",
+      "question": "Kiểm thử tĩnh (Static testing) được thực hiện trong giai đoạn nào của quá trình phát triển phần mềm?",
       "options": [
-        { "text": "Review không có khả năng tìm ra lỗi trong kế hoạch kiểm thử.", "isCorrect": false },
-        { "text": "Review được thực hiện dựa theo thông số kỹ thuật, code và kế hoạch kiểm thử", "isCorrect": true },
-        { "text": "Review không thể thực hiện dựa trên thông số kỹ thuật yêu cầu của người dùng.", "isCorrect": false },
-        { "text": "Review là cách kiểm tra mã kém hiệu quả nhất.", "isCorrect": false }
+        {
+          "text": "Đặc tả yêu cầu phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Thiết kế kiến trúc hệ thống.",
+          "isCorrect": false
+        },
+        {
+          "text": "Lập trình và viết mã nguồn.",
+          "isCorrect": false
+        },
+        {
+          "text": "Tất cả các giai đoạn trên.",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Review là một hình thức kiểm thử tĩnh, có thể áp dụng cho bất kỳ sản phẩm công việc (work product) nào trong dự án như tài liệu yêu cầu, mã nguồn (Code) và cả tài liệu kiểm thử (Test plan, Test case)."
+      "explanation": "Kiểm thử tĩnh thông qua kỹ thuật rà soát tài liệu (Reviews/Inspection) có thể áp dụng cho mọi giao phẩm từ đầu đến cuối dự án bao gồm tài liệu đặc tả (SRS), tài liệu thiết kế và trực tiếp trên mã nguồn trước khi biên dịch."
     },
     {
       "id": 39,
-      "question": "Kiểm thử được thực hiện đủ khi",
+      "question": "Nguyên lý kiểm thử 'Ngụy biến không có lỗi' (Absence-of-errors fallacy) mang thông điệp cốt lõi gì?",
       "options": [
-        { "text": "Độ tin cậy cần thiết đã đạt", "isCorrect": true },
-        { "text": "Người dùng sẽ không tìm thấy bất kỳ lỗi nghiêm trọng nào", "isCorrect": false },
-        { "text": "Hết thời gian", "isCorrect": false },
-        { "text": "Không tìm thấy lỗi nào nữa", "isCorrect": false }
+        {
+          "text": "Nếu quá trình kiểm thử không tìm thấy lỗi thì chứng tỏ phần mềm hoàn toàn sạch lỗi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Nếu phần mềm có rất ít lỗi thì chắc chắn nó sẽ thành công trên thị trường.",
+          "isCorrect": false
+        },
+        {
+          "text": "Việc tìm và sửa sạch toàn bộ lỗi vẫn vô nghĩa nếu hệ thống không đáp ứng đúng nhu cầu thực tế hoặc mong đợi của người dùng.",
+          "isCorrect": true
+        },
+        {
+          "text": "Mọi lỗi của phần mềm chỉ có thể xuất hiện khi thay đổi môi trường vận hành.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Việc kiểm thử không bao giờ có thể chứng minh phần mềm hết hoàn toàn lỗi. Nó kết thúc khi đạt được các tiêu chí dừng (Exit criteria) đã đề ra, ví dụ như độ tin cậy và chất lượng phần mềm đạt ngưỡng cho phép."
+      "explanation": "Sản phẩm phần mềm được xây dựng để giải quyết một bài toán thực tế của khách hàng. Nếu hệ thống chạy mượt mà không lỗi nhưng lại không làm được việc khách hàng cần, sản phẩm đó vẫn thất bại."
     },
     {
       "id": 40,
-      "question": "Mục đích của kiểm thử chấp nhận để làm gì?",
+      "question": "Phát biểu nào sau đây mô tả đúng nhất về khái niệm 'exhaustive testing' (kiểm thử toàn diện)?",
       "options": [
-        { "text": "Chứng minh tính tích hợp của hệ thống", "isCorrect": false },
-        { "text": "Chứng minh tính bảo mật của hệ thống", "isCorrect": false },
-        { "text": "Chứng minh hệ thống không còn lỗi", "isCorrect": false },
-        { "text": "Chứng minh tính thỏa mãn tất cả yêu cầu của khách hàng và khách hàng chấp nhận sản phẩm", "isCorrect": true }
+        {
+          "text": "Luôn bắt buộc thực hiện đối với mọi dự án phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Thường không khả thi và bất khả thi trong thực tế vì số lượng trường hợp đầu vào và các quyết định logic quá lớn.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chỉ áp dụng trong kiểm thử giao diện người dùng (UI Testing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ cần đạt 100% độ bao phủ dòng lệnh (statement coverage) là đủ để gọi là kiểm thử toàn diện.",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Mục tiêu quan trọng nhất của Acceptance Testing (Kiểm thử chấp nhận) là lấy được sự đồng ý, nghiệm thu (sign-off) từ khách hàng rằng sản phẩm đã sẵn sàng đưa vào sử dụng thực tế."
+      "explanation": "Kiểm thử toàn diện (thử nghiệm tất cả các tổ hợp đầu vào và điều kiện tiên quyết) là không thể thực hiện được trừ phi hệ thống cực kỳ đơn giản. Thay vào đó, ta sử dụng phân tích rủi ro và các kỹ thuật thiết kế ca kiểm thử để tối ưu hóa bộ test."
     },
     {
       "id": 41,
-      "question": "Cho đoạn mã giả sau: \nSwitch PC on \nStart \"outlook\" \nIF outlook appears THEN ... \nPhát biểu nào sau đây đúng về số lượng test case:",
+      "question": "Annotation nào sau đây trong JUnit 5 được sử dụng để truyền trực tiếp dữ liệu dạng bảng CSV nhiều dòng vào phương thức test có tham số?",
       "options": [
-        { "text": "1 test case để phủ các dòng lệnh, 3 test case để phủ nhánh", "isCorrect": false },
-        { "text": "2 test case để phủ các dòng lệnh, 2 test case để phủ nhánh", "isCorrect": false },
-        { "text": "1 test case để phủ các dòng lệnh, 2 test case để phủ nhánh", "isCorrect": true }
+        {
+          "text": "@CsvSource",
+          "isCorrect": true
+        },
+        {
+          "text": "@ValueSource",
+          "isCorrect": false
+        },
+        {
+          "text": "@MethodSource",
+          "isCorrect": false
+        },
+        {
+          "text": "@FileSource",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Cần 1 test case đi vào nhánh IF để phủ toàn bộ lệnh. Cần 2 test case (outlook xuất hiện và không xuất hiện) để phủ 2 nhánh (True và False)."
+      "explanation": "Trong JUnit 5, @CsvSource cung cấp một cách cực kỳ tiện lợi để truyền dữ liệu kiểm thử dạng nhiều dòng trực tiếp bên trong annotation để làm đầu vào cho @ParameterizedTest."
     },
     {
       "id": 42,
-      "question": "Trong kiểm thử tích hợp, ngoài cách tích hợp tăng dần (từ trên xuống, từ dưới lên) thì còn cách nào khác?",
+      "question": "Để xác minh một danh sách (List) trong Java chứa đúng các phần tử theo thứ tự nghiêm ngặt 1, 2, 3 bằng Hamcrest Matcher, ta nên sử dụng phương thức nào?",
       "options": [
-        { "text": "Tích hợp lớn (big plan / big bang)", "isCorrect": true },
-        { "text": "Tích hợp theo chiều rộng (width)", "isCorrect": false },
-        { "text": "Tích hợp sandwich", "isCorrect": false },
-        { "text": "Tích hợp theo chiều sâu (deep)", "isCorrect": false }
+        {
+          "text": "hasItems(1, 2, 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "contains(1, 2, 3)",
+          "isCorrect": true
+        },
+        {
+          "text": "containsInAnyOrder(1, 2, 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "everyItem(isOneOf(1, 2, 3))",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Trong phương pháp Big Bang Integration Testing, tất cả các module được tích hợp cùng một lúc và kiểm thử như một tổng thể."
+      "explanation": "Matcher contains(1, 2, 3) kiểm tra xem danh sách có chứa chính xác 3 phần tử này và phải đúng theo thứ tự đó hay không. Trong khi containsInAnyOrder không quan tâm tới thứ tự, còn hasItems chỉ kiểm tra xem các phần tử đó có xuất hiện hay không (danh sách có thể chứa thêm phần tử khác)."
     },
     {
       "id": 43,
-      "question": "Nội dung nào sau đây KHÔNG có trong tài liệu test plan:",
+      "question": "Trong JUnit 5, Annotation nào được sử dụng để chỉ định một phương thức sẽ luôn được thực thi trước mỗi phương thức test trong test class?",
       "options": [
-        { "text": "Những gì không được kiểm tra", "isCorrect": false },
-        { "text": "Kế hoạch để đánh giá chất lượng", "isCorrect": true },
-        { "text": "Lịch trình và thời hạn", "isCorrect": false },
-        { "text": "Môi trường thử nghiệm", "isCorrect": false }
+        {
+          "text": "@BeforeEach",
+          "isCorrect": true
+        },
+        {
+          "text": "@BeforeAll",
+          "isCorrect": false
+        },
+        {
+          "text": "@Before",
+          "isCorrect": false
+        },
+        {
+          "text": "@BeforeClass",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kế hoạch đảm bảo chất lượng (Quality Assurance Plan) thường là một tài liệu riêng biệt ở cấp độ dự án. Test plan (Kế hoạch kiểm thử) tập trung vào phạm vi, cách tiếp cận, nguồn lực và lịch trình của hoạt động kiểm thử."
+      "explanation": "Trong JUnit 5, @BeforeEach được dùng để thiết lập trạng thái khởi đầu, chạy lặp đi lặp lại trước mỗi phương thức kiểm thử độc lập trong class."
     },
     {
       "id": 44,
-      "question": "Sau giai đoạn nào, chúng ta có thể tiến hành Testing hộp trắng?",
+      "question": "Trong JUnit 5, Matcher nào được sử dụng để kiểm tra xem hai chuỗi văn bản có bằng nhau hay không mà không phân biệt chữ hoa và chữ thường?",
       "options": [
-        { "text": "Sau giai đoạn code", "isCorrect": true },
-        { "text": "Sau giai đoạn cài đặt", "isCorrect": false },
-        { "text": "Sau khi tạo SRS", "isCorrect": false },
-        { "text": "Sau giai đoạn thiết kế", "isCorrect": false }
+        {
+          "text": "equalToIgnoreCase()",
+          "isCorrect": true
+        },
+        {
+          "text": "equalsIgnoreCase()",
+          "isCorrect": false
+        },
+        {
+          "text": "sameTextIgnoreCase()",
+          "isCorrect": false
+        },
+        {
+          "text": "textEqualsIgnoreCase()",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Hộp trắng đòi hỏi phải xem xét mã nguồn nên chỉ thực hiện được sau khi mã đã được viết (Coding phase)."
+      "explanation": "Trong thư viện Hamcrest Matchers đi kèm JUnit, equalToIgnoreCase() là cú pháp chuẩn xác để thực hiện việc so sánh không phân biệt hoa thường."
     },
     {
       "id": 45,
-      "question": "Kỹ thuật nào sau đây không phải là kỹ thuật kiểm hộp đen:",
+      "question": "Trong chiến lược kiểm thử tích hợp từ trên xuống (Top-down Integration Testing), khi các module cấp thấp chưa hoàn thiện, lập trình viên sử dụng thành phần giả lập nào để thay thế?",
       "options": [
-        { "text": "Phân tích giá trị biên", "isCorrect": false },
-        { "text": "Phân vùng tương đương", "isCorrect": false },
-        { "text": "Bảng quyết định", "isCorrect": false },
-        { "text": "Kiểm tra cú pháp", "isCorrect": true }
+        {
+          "text": "Driver",
+          "isCorrect": false
+        },
+        {
+          "text": "Stub",
+          "isCorrect": true
+        },
+        {
+          "text": "Dummy",
+          "isCorrect": false
+        },
+        {
+          "text": "Proxy",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Kiểm tra cú pháp (Syntax testing) thường liên quan tới white-box hoặc cấp độ code compiler."
+      "explanation": "Stub là các đoạn mã giả lập đóng vai trò nhận lời gọi từ các module cấp trên và trả về kết quả định sẵn để kiểm thử tích hợp từ trên xuống. Ngược lại, Driver đóng vai trò gọi kiểm thử khi tích hợp từ dưới lên (Bottom-up)."
     },
     {
       "id": 46,
-      "question": "Các trường hợp kiểm thử chấp nhận được dựa trên những gì?",
+      "question": "Cho đoạn chương trình sau:\nswitch (n % 3) {\n  case 0:\n    cout << "Chia het cho 3";\n    break;\n  case 1:\n  case 2:\n    cout << "Khong chia het cho 3";\n}\nCần tối thiểu bao nhiêu ca kiểm thử để đạt 100% độ bao phủ nhánh?",
       "options": [
-        { "text": "Thiết kế", "isCorrect": false },
-        { "text": "Bảng quyết định", "isCorrect": false },
-        { "text": "Yêu cầu", "isCorrect": true },
-        { "text": "Code", "isCorrect": false }
+        {
+          "text": "2 ca kiểm thử",
+          "isCorrect": true
+        },
+        {
+          "text": "3 ca kiểm thử",
+          "isCorrect": false
+        },
+        {
+          "text": "1 ca kiểm thử",
+          "isCorrect": false
+        },
+        {
+          "text": "4 ca kiểm thử",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Acceptance Testing được kiểm tra dựa trên tài liệu đặc tả yêu cầu người dùng (User Requirements)."
+      "explanation": "Mặc dù cấu trúc switch-case có 3 nhãn trường hợp, nhưng về mặt logic rẽ nhánh, chương trình chỉ có 2 nhánh độc lập thực thi câu lệnh in ra màn hình: nhánh xử lý 'Chia het cho 3' (khi n % 3 == 0) và nhánh xử lý 'Khong chia het cho 3' (khi n % 3 == 1 hoặc 2). Do đó, chỉ cần tối thiểu 2 ca kiểm thử là có thể phủ hết các nhánh thực thi."
     },
     {
       "id": 47,
-      "question": "Cho đoạn mã giả sau, số test case tối thiểu để phủ 100% điều kiện là bao nhiêu?\nif(x!=0 && x>=y) x=x-y;\nif(x==0 || y==0) cout<< khong;",
+      "question": "Hoạt động nào dùng để kiểm tra và xác nhận xem chúng ta đã phát triển đúng sản phẩm phần mềm theo đúng kỳ vọng và yêu cầu thực tế của khách hàng chưa?",
       "options": [
-        { "text": "2", "isCorrect": true },
-        { "text": "1", "isCorrect": false },
-        { "text": "3", "isCorrect": false },
-        { "text": "4", "isCorrect": false }
+        {
+          "text": "Validation (Thẩm định/Xác nhận)",
+          "isCorrect": true
+        },
+        {
+          "text": "Verification (Xác minh)",
+          "isCorrect": false
+        },
+        {
+          "text": "Quality Assurance (Đảm bảo chất lượng)",
+          "isCorrect": false
+        },
+        {
+          "text": "Quality Control (Kiểm soát chất lượng)",
+          "isCorrect": false
+        }
       ],
-      "explanation": "Câu 1 có 2 điều kiện con: x!=0 và x>=y. Câu 2 có 2 điều kiện con: x==0 và y==0. Cần tối thiểu 2 Test Case để mỗi điều kiện con đều nhận đủ 2 giá trị True và False."
+      "explanation": "Validation trả lời cho câu hỏi: 'Are we building the right product?' (Chúng ta có đang xây dựng đúng sản phẩm khách hàng cần không?), tập trung vào nghiệm thu dựa trên mong đợi thực tế của người dùng."
     },
     {
       "id": 48,
-      "question": "Kiểm thử thiết kế và toàn bộ hệ thống (sau khi tích hợp) có thỏa mãn yêu cầu đặt ra hay không được gọi là gì?",
+      "question": "Annotation nào trong JUnit 5 được sử dụng trực tiếp để khai báo một phương thức kiểm thử có nhận tham số (Parameterized Test)?",
       "options": [
-        { "text": "Kiểm thử đơn vị", "isCorrect": false },
-        { "text": "Kiểm thử hệ thống", "isCorrect": true },
-        { "text": "Kiểm thử chấp nhận", "isCorrect": false },
-        { "text": "Kiểm thử tích hợp", "isCorrect": false }
+        {
+          "text": "@ParametrizedTest",
+          "isCorrect": false
+        },
+        {
+          "text": "@Parameterized",
+          "isCorrect": false
+        },
+        {
+          "text": "@ParamTest",
+          "isCorrect": false
+        },
+        {
+          "text": "@ParameterizedTest",
+          "isCorrect": true
+        }
       ],
-      "explanation": "Kiểm thử hệ thống (System Testing) kiểm tra một hệ thống đã được tích hợp hoàn chỉnh để xác minh xem nó có đáp ứng được các yêu cầu đã chỉ định (cả chức năng và phi chức năng) hay không."
+      "explanation": "Từ khóa chính xác trong JUnit 5 để khai báo một phương thức chạy với nhiều tham số đầu vào là @ParameterizedTest."
+    },
+    {
+      "id": 49,
+      "question": "Cho đoạn mã tìm ước số chung lớn nhất (USCLN) sau:\nint USCLN(int a, int b){\n    while (a != b)\n        if (a > b)\n            a = a - b;\n        else\n            b = b - a;\n    return a;\n}\nPhát biểu nào sau đây đúng về số lượng ca kiểm thử cần thiết?",
+      "options": [
+        {
+          "text": "2 test case để phủ các dòng lệnh, 2 test case để phủ nhánh",
+          "isCorrect": false
+        },
+        {
+          "text": "1 test case để phủ các dòng lệnh, 2 test case để phủ nhánh",
+          "isCorrect": false
+        },
+        {
+          "text": "2 test case để phủ các dòng lệnh, 3 test case để phủ nhánh",
+          "isCorrect": true
+        },
+        {
+          "text": "1 test case để phủ các dòng lệnh, 1 test case để phủ nhánh",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Để đạt 100% độ bao phủ dòng lệnh, cần tối thiểu 2 ca kiểm thử: (4, 2) và (2, 4) để thực thi cả nhánh if và else của phép trừ. Để đạt 100% độ bao phủ quyết định (nhánh rẽ), cần thêm ca kiểm thử (3, 3) để bỏ qua vòng lặp while ngay từ đầu (True/False của while)."
+    },
+    {
+      "id": 50,
+      "question": "Kỹ thuật thiết kế ca kiểm thử (test case) nào phù hợp nhất để kiểm tra các quy luật nghiệp vụ phức tạp của một hệ thống tính phí gửi xe?",
+      "options": [
+        {
+          "text": "Bảng quyết định (Decision Table Testing).",
+          "isCorrect": true
+        },
+        {
+          "text": "Phân tích luồng điều khiển (Control Flow Analysis).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử trường hợp sử dụng (Use Case Testing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử chuyển đổi trạng thái (State Transition Testing).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Bảng quyết định (Decision Table) cực kỳ hữu hiệu và trực quan khi xử lý các kịch bản có sự kết hợp của nhiều điều kiện logic đầu vào để đưa ra các hành vi và mức phí khác nhau."
+    },
+    {
+      "id": 51,
+      "question": "Cần tối thiểu bao nhiêu ca kiểm thử để phủ nhánh (branch coverage) 100% cho đoạn mã sau:\nint f(int a, int b) {\n  if (a < 0 && b < 0) return 0;\n  if (a > b || a == b) return 1;\n  return -1;\n}",
+      "options": [
+        {
+          "text": "2",
+          "isCorrect": false
+        },
+        {
+          "text": "5",
+          "isCorrect": false
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "text": "3",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Đoạn mã có 2 câu lệnh IF độc lập và có 3 nhánh kết quả trả về tương ứng: Nhánh 1 (khi a < 0 và b < 0, trả về 0); Nhánh 2 (khi điều kiện 1 sai nhưng a >= b, trả về 1); Nhánh 3 (khi cả hai điều kiện đều sai, trả về -1). Do đó ta cần tối thiểu 3 ca kiểm thử để phủ 100% các nhánh rẽ này."
+    },
+    {
+      "id": 52,
+      "question": "Annotation nào trong JUnit 5 được sử dụng để chỉ định việc thực thi một bộ kiểm thử (nhóm các class test lại với nhau)?",
+      "options": [
+        {
+          "text": "@TestGroup",
+          "isCorrect": false
+        },
+        {
+          "text": "@Suite",
+          "isCorrect": true
+        },
+        {
+          "text": "@Group",
+          "isCorrect": false
+        },
+        {
+          "text": "@TestSuite",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Trong JUnit 5, @Suite được sử dụng để gom nhóm các lớp kiểm thử khác nhau và chạy chúng đồng thời như một bộ kiểm thử duy nhất."
+    },
+    {
+      "id": 53,
+      "question": "Độ phức tạp chu trình (Cyclomatic Complexity) của đoạn mã giả sau là bao nhiêu?\nint i = 1, s = 2;\ndo {\n    s += i;\n    cout << "i = " << i << " => s = " << s << endl;\n} while (i++ < 10);",
+      "options": [
+        {
+          "text": "3",
+          "isCorrect": false
+        },
+        {
+          "text": "2",
+          "isCorrect": true
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "text": "5",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cấu trúc vòng lặp 'do-while' chỉ chứa duy nhất 1 câu lệnh điều kiện quyết định kiểm tra biểu thức 'i++ < 10'. Do đó, P = 1, độ phức tạp chu trình M = P + 1 = 2."
+    },
+    {
+      "id": 54,
+      "question": "Áp dụng kỹ thuật kiểm thử giá trị biên mạnh (Robust Boundary Value Analysis) cho hàm có 3 biến độc lập có khoảng giá trị từ 1 đến 100. Số lượng ca kiểm thử cần thiết là bao nhiêu?",
+      "options": [
+        {
+          "text": "13 ca kiểm thử",
+          "isCorrect": false
+        },
+        {
+          "text": "19 ca kiểm thử",
+          "isCorrect": true
+        },
+        {
+          "text": "9 ca kiểm thử",
+          "isCorrect": false
+        },
+        {
+          "text": "125 ca kiểm thử",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Công thức tính số lượng ca kiểm thử biên mạnh (Robust BVA) cho N biến độc lập là 6N + 1. Với N = 3 biến độc lập (a, b, c), số lượng ca kiểm thử cần thiết là 6 * 3 + 1 = 19 ca kiểm thử."
+    },
+    {
+      "id": 55,
+      "question": "Nguyên lý kiểm thử 'Không thể chứng minh sự không tồn tại của lỗi' chỉ ra điều gì?",
+      "options": [
+        {
+          "text": "Kiểm thử chỉ có thể phát hiện lỗi, không thể chứng minh phần mềm không có lỗi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Kiểm thử có thể loại bỏ mọi lỗi trong phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử giúp chứng minh phần mềm hoàn hảo.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử chỉ cần kiểm tra giao diện người dùng.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Kiểm thử chỉ có thể chỉ ra sự hiện diện của lỗi (presence of defects) chứ không thể khẳng định một chương trình đã hoàn toàn sạch lỗi tuyệt đối 100%."
+    },
+    {
+      "id": 56,
+      "question": "Tập hợp các ca kiểm thử (Test Suite) thường được tạo ra trong giai đoạn nào?",
+      "options": [
+        {
+          "text": "Thiết lập môi trường chạy thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Lập kế hoạch kiểm thử tổng thể.",
+          "isCorrect": false
+        },
+        {
+          "text": "Phân tích yêu cầu phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Giai đoạn phát triển ca kiểm thử (Test Case Development).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Test Suite là quá trình nhóm hợp lý các ca kiểm thử đã được thiết kế chi tiết để chuẩn bị cho hoạt động chạy thử nghiệm."
+    },
+    {
+      "id": 57,
+      "question": "Phát biểu nào sau đây KHÔNG phải là một trong các nguyên lý cốt lõi của kiểm thử phần mềm?",
+      "options": [
+        {
+          "text": "Kiểm thử càng sớm càng tốt.",
+          "isCorrect": false
+        },
+        {
+          "text": "Lỗi thường phân bố tập trung (Defect clustering).",
+          "isCorrect": false
+        },
+        {
+          "text": "Nghịch lý thuốc trừ sâu (Pesticide paradox).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử toàn bộ (Exhaustive testing).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "'Kiểm thử toàn bộ là bất khả thi' mới là nguyên lý kiểm thử chính thức. Do đó, 'Kiểm thử toàn bộ' không phải là một nguyên lý khả thi."
+    },
+    {
+      "id": 58,
+      "question": "Cấp độ kiểm thử nào sau đây tập trung chủ yếu vào việc phát hiện lỗi tương tác và giao tiếp giữa các thành phần hoặc hệ thống con với nhau?",
+      "options": [
+        {
+          "text": "Kiểm thử hệ thống (System Testing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử chấp nhận (Acceptance Testing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử đơn vị (Unit Testing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử tích hợp (Integration Testing).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Kiểm thử tích hợp (Integration Testing) thực hiện việc liên kết và kiểm tra sự tương thích, truyền dữ liệu qua lại giữa các module đã vượt qua kiểm thử đơn vị độc lập."
+    },
+    {
+      "id": 59,
+      "question": "Hoạt động Kiểm thử hệ thống (System Testing) nên tập trung vào:",
+      "options": [
+        {
+          "text": "Kiểm toàn diện cả yêu cầu chức năng lẫn phi chức năng.",
+          "isCorrect": true
+        },
+        {
+          "text": "Kiểm yêu cầu phi chức năng hoặc yêu cầu chức năng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ kiểm các yêu cầu phi chức năng không cần kiểm các yêu cầu chức năng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ kiểm các yêu cầu chức năng không cần kiểm các yêu cầu phi chức năng.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Kiểm thử hệ thống phải bao quát toàn bộ hoạt động của ứng dụng, đảm bảo cả tính năng nghiệp vụ chạy đúng lẫn các yêu cầu vận hành phi chức năng (bảo mật, hiệu năng, độ tin cậy)."
+    },
+    {
+      "id": 60,
+      "question": "Hệ thống tính phí vận chuyển: Dưới 5kg phí là 3$; Từ 5kg đến 10kg phí là 5$; Trên 10kg phí là 10$. Trọng lượng nhỏ hơn hoặc bằng 0 là không hợp lệ. Số lượng lớp tương đương cần thiết để thiết kế bộ kiểm thử là bao nhiêu?",
+      "options": [
+        {
+          "text": "2 lớp tương đương.",
+          "isCorrect": false
+        },
+        {
+          "text": "3 lớp tương đương.",
+          "isCorrect": false
+        },
+        {
+          "text": "4 lớp tương đương.",
+          "isCorrect": true
+        },
+        {
+          "text": "5 lớp tương đương.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Các lớp tương đương gồm: 1 lớp không hợp lệ (Trọng lượng <= 0) và 3 lớp hợp lệ tương ứng với các mức phí vận chuyển: (0 < Trọng lượng < 5), [5, 10], và (Trọng lượng > 10). Tổng cộng là 4 lớp tương đương."
+    },
+    {
+      "id": 61,
+      "question": "Kỹ thuật đoán lỗi (Error Guessing) được áp dụng tốt nhất vào thời điểm nào trong quy trình thiết kế kiểm thử?",
+      "options": [
+        {
+          "text": "Khi tiếp cận đầu tiên để tạo ra các test case.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sau khi các kỹ thuật thiết kế có cấu trúc chính quy đã được áp dụng.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sau khi hệ thống đã phát hành và hoạt động chính thức.",
+          "isCorrect": false
+        },
+        {
+          "text": "Thực hiện chủ yếu bởi những tester thiếu kinh nghiệm.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Đoán lỗi (Error Guessing) là một kỹ thuật kiểm thử dựa trên kinh nghiệm, được khuyên dùng để bổ sung các ca kiểm thử dị thường hoặc lỗi đặc thù sau khi đã áp dụng các phương pháp thiết kế logic bài bản."
+    },
+    {
+      "id": 62,
+      "question": "Cho đoạn mã sau:\nint test(int k){\n  if(k<=1) return -1;\n  for(int i=2; i<k; i++)\n    if(k%i==0) return -1;\n  return 1;\n}\nCần tối thiểu bao nhiêu ca kiểm thử để đạt 100% độ bao phủ nhánh?",
+      "options": [
+        {
+          "text": "2 ca kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "3 ca kiểm thử.",
+          "isCorrect": true
+        },
+        {
+          "text": "4 ca kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "5 ca kiểm thử.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Để bao phủ đầy đủ các hướng quyết định (True/False): 1. Câu lệnh k <= 1 là True (ví dụ k=1, trả về -1); 2. Câu lệnh k <= 1 là False, đi vào vòng lặp nhưng điều kiện vòng lặp i < k là False (ví dụ k=2, không chạy vòng lặp, đi thẳng tới return 1); 3. Điều kiện k % i == 0 bên trong vòng lặp là True (ví dụ k=4, i=2 chia hết, trả về -1). Do đó cần 3 ca kiểm thử."
+    },
+    {
+      "id": 63,
+      "question": "Đoạn mã giả: IF (Tuổi < 18 OR Là_Học_Sinh == TRUE) THEN Giảm_giá = 10%. Cặp ca kiểm thử nào sau đây đạt 100% độ bao phủ quyết định với số lượng tối thiểu?",
+      "options": [
+        {
+          "text": "TC1: Tuổi=20, Là_Học_Sinh=FALSE",
+          "isCorrect": false
+        },
+        {
+          "text": "TC1: Tuổi=20, Là_Học_Sinh=TRUE; TC2: Tuổi=20, Là_Học_Sinh=FALSE",
+          "isCorrect": true
+        },
+        {
+          "text": "TC1: Tuổi=15, Là_Học_Sinh=TRUE; TC2: Tuổi=15, Là_Học_Sinh=FALSE",
+          "isCorrect": false
+        },
+        {
+          "text": "TC1: Tuổi=10, Là_Học_Sinh=FALSE",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Để bao phủ quyết định 100%, ta cần tối thiểu 1 ca làm biểu thức điều kiện Đúng và 1 ca làm biểu thức điều kiện Sai. Với cặp TC ở phương án B: TC1 làm biểu thức OR có nhánh bên phải Đúng -> Cả biểu thức Đúng (True); TC2 làm cả hai vế OR đều Sai -> Cả biểu thức Sai (False). Đây là cặp tối ưu nhất."
+    },
+    {
+      "id": 64,
+      "question": "Phát biểu nào sau đây là đúng về độ bao phủ kiểm thử (Test Coverage)?",
+      "options": [
+        {
+          "text": "Cho biết phần mềm được kiểm thử kỹ hay chưa.",
+          "isCorrect": true
+        },
+        {
+          "text": "Không có bất kỳ mối liên hệ nào với kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ dừng hoạt động kiểm thử khi độ bao phủ đạt đúng 100%.",
+          "isCorrect": false
+        },
+        {
+          "text": "Số lượng test case càng lớn thì độ bao phủ chắc chắn càng cao.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Độ bao phủ là chỉ số đo lường mức độ hoàn thiện và kỹ lưỡng của bộ kiểm thử so với cấu trúc mã nguồn hoặc đặc tả yêu cầu, giúp đánh giá mức độ tin cậy của ứng dụng."
+    },
+    {
+      "id": 65,
+      "question": "Nguyên lý 'Nghịch lý thuốc trừ sâu' (Pesticide Paradox) gợi ý hành động nào sau đây?",
+      "options": [
+        {
+          "text": "Cần thường xuyên xem xét và cập nhật bộ test case, viết thêm test case mới.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dừng kiểm thử khi đã tìm thấy đủ số lượng lỗi dự kiến.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ sử dụng những test case đã tìm thấy lỗi trong quá khứ.",
+          "isCorrect": false
+        },
+        {
+          "text": "Nên tập trung vào kiểm thử tự động hơn là thủ công.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Nếu chạy lại một bộ test case cũ quá nhiều lần, chúng sẽ không tìm thấy lỗi mới vì lập trình viên đã sửa hết các lỗi mà bộ test này có khả năng quét qua. Do đó, cần liên tục viết thêm các ca kiểm thử mới."
+    },
+    {
+      "id": 66,
+      "question": "Nguồn tài liệu nào sau đây là cơ sở tốt nhất để xác định 'Kết quả mong đợi' (Expected Results) cho các kịch bản kiểm thử chấp nhận của người dùng (UAT)?",
+      "options": [
+        {
+          "text": "Đặc tả kỹ thuật chương trình.",
+          "isCorrect": false
+        },
+        {
+          "text": "Tài liệu yêu cầu người dùng (User Requirements).",
+          "isCorrect": true
+        },
+        {
+          "text": "Đặc tả chi tiết hệ thống.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kết quả chạy thực tế của phần mềm.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Kiểm thử chấp nhận (UAT) nhằm xác minh xem phần mềm có đáp ứng đúng nhu cầu thực tế của người dùng hay không. Do đó, tài liệu Yêu cầu người dùng (User Requirements/Urd) là nguồn tham chiếu chuẩn nhất."
+    },
+    {
+      "id": 67,
+      "question": "Cho đoạn mã giả sau:\nif (x > y) x = x + 1;\ny = y + 1;\nwhile (x > y)\n    y = x * y;\nx = x + 1;\nSố lượng ca kiểm thử tối thiểu để đạt độ bao phủ nhánh 100% là bao nhiêu?",
+      "options": [
+        {
+          "text": "Có 2 ca kiểm thử.",
+          "isCorrect": true
+        },
+        {
+          "text": "Có 1 ca kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Có 3 ca kiểm thử.",
+          "isCorrect": false
+        },
+        {
+          "text": "Có 4 ca kiểm thử.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Chúng ta cần tối thiểu 2 ca kiểm thử: Ca 1: x = 5, y = 3 (chạy qua nhánh True của if, chạy qua nhánh True của while và kết thúc vòng lặp); Ca 2: x = 2, y = 3 (chạy qua nhánh False của if, bỏ qua nhánh True của while). Hai ca này phủ trọn vẹn tất cả các nhánh Đúng/Sai."
+    },
+    {
+      "id": 68,
+      "question": "Kết quả thực thi của đoạn mã kiểm thử JUnit 5 sau đây là gì?\npublic class TestClass {\n    @Test\n    public void testingMethod() {\n        String message = "Test";\n        assertEquals(3, message.length());\n    }\n}",
+      "options": [
+        {
+          "text": "Ca kiểm thử chạy và báo kết quả thành công (Pass)",
+          "isCorrect": false
+        },
+        {
+          "text": "Xảy ra lỗi Runtime làm dừng chương trình",
+          "isCorrect": false
+        },
+        {
+          "text": "Gây lỗi biên dịch mã nguồn của lớp kiểm thử",
+          "isCorrect": false
+        },
+        {
+          "text": "Ca kiểm thử chạy và báo kết quả thất bại (Fail)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Chuỗi 'Test' có độ dài thực tế là 4 ký tự. Hàm so sánh assert giữa giá trị mong đợi là 3 với giá trị thực tế 4 không khớp nhau nên JUnit sẽ đánh dấu ca kiểm thử là Thất bại (Fail)."
+    },
+    {
+      "id": 69,
+      "question": "Trong quy trình phát triển phần mềm, ai là người chịu trách nhiệm chính trong việc thực hiện kiểm thử đơn vị (Unit Testing)?",
+      "options": [
+        {
+          "text": "Nhân viên kiểm thử phần mềm độc lập (QC/Tester).",
+          "isCorrect": false
+        },
+        {
+          "text": "Lập trình viên phát triển mã nguồn (Developer).",
+          "isCorrect": true
+        },
+        {
+          "text": "Khách hàng nghiệm thu sản phẩm (User).",
+          "isCorrect": false
+        },
+        {
+          "text": "Nhà thiết kế giao diện (Designer).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Lập trình viên hiểu rõ nhất về cấu trúc logic mã nguồn của mình, họ trực tiếp viết unit test để xác minh tính chính xác của các đơn vị code nhỏ nhất trước khi tích hợp."
+    },
+    {
+      "id": 70,
+      "question": "Ưu điểm chính của phương pháp kiểm thử tích hợp từ dưới lên (Bottom-up Integration Testing) là gì?",
+      "options": [
+        {
+          "text": "Không cần phải tạo ra các thành phần giả lập đầu vào (Stubs).",
+          "isCorrect": true
+        },
+        {
+          "text": "Thiết kế các ca kiểm thử rất đơn giản và không cần viết các Driver.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử ngay được các chức năng điều khiển hệ thống cấp cao.",
+          "isCorrect": false
+        },
+        {
+          "text": "Phát hiện sớm các lỗi kiến trúc của toàn bộ hệ thống.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Vì tích hợp đi từ dưới lên nên các module cấp thấp hơn đã sẵn sàng hoạt động ổn định, do đó không cần thiết lập Stub để giả lập dữ liệu trả về cho module cấp trên."
+    },
+    {
+      "id": 71,
+      "question": "Các tệp kiểm thử viết bằng JUnit trong môi trường phát triển Java được lưu dưới phần mở rộng (extension) nào?",
+      "options": [
+        {
+          "text": ".test",
+          "isCorrect": false
+        },
+        {
+          "text": ".unit",
+          "isCorrect": false
+        },
+        {
+          "text": ".junit",
+          "isCorrect": false
+        },
+        {
+          "text": ".java",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "JUnit là một framework viết bằng ngôn ngữ lập trình Java, vì thế các lớp test vẫn là các class Java thông thường và được lưu dưới dạng file .java."
+    },
+    {
+      "id": 72,
+      "question": "Kỹ thuật nào sau đây là một hình thức của kiểm thử tĩnh (Static Testing)?",
+      "options": [
+        {
+          "text": "Kỹ thuật đoán lỗi (Error Guessing).",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm thử hồi quy tự động hóa.",
+          "isCorrect": false
+        },
+        {
+          "text": "Truyền giá trị đầu vào và đối chiếu kết quả đầu ra thực tế.",
+          "isCorrect": false
+        },
+        {
+          "text": "Đọc và đánh giá mã nguồn (Review code).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Review code là kỹ thuật phân tích tĩnh mã nguồn thông qua việc đọc, rà soát logic trực tiếp mà không cần khởi chạy chương trình phần mềm."
+    },
+    {
+      "id": 73,
+      "question": "Phát biểu nào sau đây là đúng về độ bao phủ kiểm thử (Test Coverage)?",
+      "options": [
+        {
+          "text": "Số lượng test case càng lớn thì chắc chắn độ bao phủ càng cao.",
+          "isCorrect": false
+        },
+        {
+          "text": "Không có mối quan hệ gì với quá trình kiểm thử phần mềm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ dừng hoạt động kiểm thử khi độ bao phủ đạt đúng 100%.",
+          "isCorrect": false
+        },
+        {
+          "text": "Độ bao phủ là thước đo cho biết phần mềm có được kiểm thử kỹ hay chưa.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Độ bao phủ cao đồng nghĩa với việc nhiều thành phần cấu trúc của chương trình đã được kiểm tra qua, phản ánh độ tin cậy và kỹ lưỡng của quá trình kiểm thử."
+    },
+    {
+      "id": 74,
+      "question": "Kịch bản và ca kiểm thử (Test script / test case) thường được tạo dựng chi tiết nhất trong giai đoạn nào?",
+      "options": [
+        {
+          "text": "Giai đoạn phát triển ca kiểm thử (Test Case Development).",
+          "isCorrect": true
+        },
+        {
+          "text": "Giai đoạn rà soát và phân tích yêu cầu.",
+          "isCorrect": false
+        },
+        {
+          "text": "Giai đoạn cấu hình và thiết lập môi trường test.",
+          "isCorrect": false
+        },
+        {
+          "text": "Giai đoạn Lập kế hoạch kiểm thử tổng thể.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Sau khi định hình kịch bản ở pha thiết kế, các ca kiểm thử chi tiết và kịch bản thực thi tự động (test script) sẽ được hiện thực hoàn chỉnh trong giai đoạn Phát triển ca kiểm thử."
+    },
+    {
+      "id": 75,
+      "question": "Kiểm thử phần mềm được coi là hoàn thành đầy đủ khi nào?",
+      "options": [
+        {
+          "text": "Khi đã phát hiện và xử lý được toàn bộ các lỗi trong hệ thống.",
+          "isCorrect": false
+        },
+        {
+          "text": "Khi nhận được sự hài lòng hoàn toàn từ phía khách hàng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Khi hệ thống đạt được đầy đủ các tiêu chí dừng kiểm thử đã được định nghĩa và thống nhất trước đó.",
+          "isCorrect": true
+        },
+        {
+          "text": "Khi hệ thống không còn bất cứ lỗi nào khi thực thi.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Tiêu chí dừng kiểm thử (Exit Criteria) trong kế hoạch kiểm thử là cơ sở pháp lý và kỹ thuật duy nhất để tuyên bố dừng hoạt động kiểm thử một cách có khoa học."
+    },
+    {
+      "id": 76,
+      "question": "Quy trình phát triển phần mềm theo hướng kiểm thử TDD (Test-Driven Development) trải qua 3 pha tuần hoàn nào?",
+      "options": [
+        {
+          "text": "Phải thực hiện việc test 2 lần để giảm lỗi tối đa.",
+          "isCorrect": false
+        },
+        {
+          "text": "Hai giai đoạn cơ bản: Thiết kế test trước, lập trình code sau.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ba giai đoạn liên tục: Đỏ (Red) -> Xanh (Green) -> Tối ưu hóa (Refactor).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ba giai đoạn cơ bản: Kiểm thử -> Viết mã -> Kiểm thử lại.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Chu trình TDD: Red (viết test case chạy lỗi) -> Green (viết code tối giản để test case chạy qua) -> Refactor (tối ưu hóa cấu trúc code mà không làm thay đổi tính năng)."
+    },
+    {
+      "id": 77,
+      "question": "Kịch bản nào dưới đây thuộc loại kiểm thử chức năng (Functional Testing) cho một hệ thống thương mại điện tử?",
+      "options": [
+        {
+          "text": "Đo lường thời gian xử lý khi hệ thống chịu tải từ 5.000 người dùng truy cập.",
+          "isCorrect": false
+        },
+        {
+          "text": "Đảm bảo giao diện mua hàng hiển thị trực quan và thân thiện với người dùng lớn tuổi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm tra xem người dùng có thể thực hiện huỷ đơn hàng đã đặt thành công hay không.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tất cả các phương án trên đều đúng.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Hủy đơn hàng là một tính năng nghiệp vụ rõ ràng, do đó việc kiểm tra hoạt động này thuộc về phạm vi kiểm thử chức năng."
+    },
+    {
+      "id": 78,
+      "question": "Hoạt động nào sau đây KHÔNG phải là một mục tiêu trực tiếp của hoạt động kiểm thử phần mềm?",
+      "options": [
+        {
+          "text": "Tìm kiếm nguyên nhân sâu xa gây lỗi (Root Cause Analysis).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ngăn ngừa việc phát sinh các khiếm khuyết trong mã nguồn.",
+          "isCorrect": false
+        },
+        {
+          "text": "Xây dựng niềm tin về chất lượng phần mềm trước khi bàn giao.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dò tìm các khuyết điểm, lỗi chức năng của phần mềm.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Tìm nguyên nhân sâu xa và khắc phục lỗi là nhiệm vụ của Debugging, còn Kiểm thử chỉ nhằm phát hiện sự xuất hiện của lỗi và đo lường chất lượng."
+    },
+    {
+      "id": 79,
+      "question": "Hoạt động xác định các tiêu chí dừng kiểm thử (Exit Criteria) được định nghĩa chi tiết vào thời điểm nào?",
+      "options": [
+        {
+          "text": "Trong quá trình Lập kế hoạch kiểm thử (Test Planning).",
+          "isCorrect": true
+        },
+        {
+          "text": "Khi chuẩn bị đóng toàn bộ hoạt động kiểm thử dự án.",
+          "isCorrect": false
+        },
+        {
+          "text": "Khi tiến hành đánh giá kết quả chạy thử thực tế và lập báo cáo.",
+          "isCorrect": false
+        },
+        {
+          "text": "Trong quá trình giám sát và kiểm soát chất lượng chạy thử.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Tiêu chí dừng kiểm thử là nội dung bắt buộc phải thiết lập ngay trong pha Lập kế hoạch kiểm thử để định hình mục tiêu cho dự án."
+    },
+    {
+      "id": 80,
+      "question": "Hoạt động nào sau đây KHÔNG thuộc về phạm vi kiểm thử mức hệ thống (System Testing)?",
+      "options": [
+        {
+          "text": "Kiểm thử khả năng phục hồi dữ liệu sau khi hệ thống gặp sự cố mất điện.",
+          "isCorrect": false
+        },
+        {
+          "text": "Kiểm tra cấu trúc và xem mã nguồn có tuân thủ đúng chuẩn viết code (Coding standards) không.",
+          "isCorrect": true
+        },
+        {
+          "text": "Đánh giá mức độ dễ sử dụng và tính thân thiện của giao diện người dùng.",
+          "isCorrect": false
+        },
+        {
+          "text": "Đo lường thời gian phản hồi của trang web dưới tải trọng cao.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Kiểm tra mã nguồn tuân thủ coding standards là một hoạt động kiểm thử tĩnh/Review ở mức Unit/Component chứ không phải kiểm thử hệ thống động."
+    },
+    {
+      "id": 81,
+      "question": "Các bước cơ bản của quy trình kiểm thử dòng điều khiển (Control Flow Testing) là gì?",
+      "options": [
+        {
+          "text": "Tính độ phức tạp chu trình để xác định đồ thị dòng điều khiển, xác định đường thi hành, rồi viết test case dựa vào các đường đó.",
+          "isCorrect": false
+        },
+        {
+          "text": "Xây dựng đồ thị dòng điều khiển (CFG) theo tiêu chí bao phủ, xác định tập các đường thi hành (execution paths), sinh các ca kiểm thử tương ứng và tiến hành thực thi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sinh trực tiếp đồ thị các test case từ mã nguồn với độ đo cần kiểm thử và thực thi chúng.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Quy trình chuẩn gồm tạo đồ thị CFG -> lựa chọn tiêu chí và xác định đường đi -> thiết kế dữ liệu kiểm thử (test case) đi qua đường đó -> chạy thử và đánh giá kết quả."
+    },
+    {
+      "id": 82,
+      "question": "Kiểm thử hồi quy (Regression Testing) nên được thực hiện vào thời điểm nào để tối ưu hiệu quả kiểm thử?",
+      "options": [
+        {
+          "text": "Sau khi mã nguồn có sự sửa đổi (vá lỗi, nâng cấp tính năng) hoặc thay đổi môi trường vận hành.",
+          "isCorrect": true
+        },
+        {
+          "text": "Khi khách hàng có yêu cầu đánh giá hiệu năng chịu tải của hệ thống.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ thực hiện đúng một lần duy nhất ngay trước khi phát hành sản phẩm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Chỉ thực hiện ở giai đoạn khởi động dự án mới.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Kiểm thử hồi quy được thực hiện nhằm bảo đảm các thay đổi mới trong mã nguồn không làm phá vỡ các tính năng cũ đang hoạt động ổn định trước đó."
     }
   ]
 }
