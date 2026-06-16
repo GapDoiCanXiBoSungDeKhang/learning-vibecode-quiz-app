@@ -1,7 +1,7 @@
 {
   "id": "nhap-mon-web",
   "title": "Nhập Môn Web (HTML & CSS)",
-  "description": "Các câu hỏi trắc nghiệm về HTML, CSS, thẻ định dạng và các khái niệm cơ bản về lập trình web frontend.",
+  "description": "Bộ câu hỏi trắc nghiệm toàn diện gồm 117 câu về HTML, CSS, thẻ định dạng, thuộc tính giao diện và các khái niệm cơ bản về lập trình web frontend.",
   "icon": "💻",
   "color": "#2563eb",
   "questions": [
@@ -55,7 +55,7 @@
       "options": [
         { "text": "<p align=\"justify\">...</p>", "isCorrect": true },
         { "text": "<p><justify>...</justify></p>", "isCorrect": false },
-        { "text": "<p style=align:justify\">...</p>", "isCorrect": false },
+        { "text": "<p style=\"align:justify\">...</p>", "isCorrect": false },
         { "text": "Tất cả đều đúng", "isCorrect": false }
       ],
       "explanation": "Thuộc tính align=\"justify\" trong thẻ <p> là cách viết đúng trong HTML cũ để canh đều 2 bên (justify). Hiện nay thường dùng CSS text-align: justify."
@@ -88,8 +88,8 @@
       "options": [
         { "text": "target=\"_top\"", "isCorrect": false },
         { "text": "target=\"_blank\"", "isCorrect": true },
-        { "text": "target self", "isCorrect": false },
-        { "text": "target\" parent\"", "isCorrect": false }
+        { "text": "target=\"_self\"", "isCorrect": false },
+        { "text": "target=\"_parent\"", "isCorrect": false }
       ],
       "explanation": "Thuộc tính target=\"_blank\" của thẻ <a> chỉ định cho trình duyệt mở liên kết trong một tab hoặc cửa sổ mới."
     },
@@ -109,7 +109,7 @@
       "question": "Tag nào dùng để tạo hình nền cho web?",
       "options": [
         { "text": "<body background=\"background.gif\">", "isCorrect": true },
-        { "text": "Mô tả Định nghĩa", "isCorrect": false },
+        { "text": "<body bgcolor=\"background.gif\">", "isCorrect": false },
         { "text": "<img src=\"background.gif\" background>", "isCorrect": false },
         { "text": "Tất cả đều sai", "isCorrect": false }
       ],
@@ -172,7 +172,7 @@
     },
     {
       "id": 16,
-      "question": "Câu 1. Văn bản nào có màu đỏ: <style>span, div.c2 {color: red;}</style> <div class=\"c1\">Text1</div><p>Text2</p><span>Text3</span>",
+      "question": "Văn bản nào có màu đỏ khi định nghĩa: <style>span, div.c2 {color: red;}</style> và mã nguồn: <div class=\"c1\">Text1</div><p>Text2</p><span>Text3</span>",
       "options": [
         { "text": "Text1", "isCorrect": false },
         { "text": "Text2", "isCorrect": false },
@@ -183,7 +183,7 @@
     },
     {
       "id": 17,
-      "question": "Câu 2. Văn bản nào có màu đỏ: <style>p.c1 {color: red;}</style> <div class=\"c1\">Text1</div> <p class=\"c1\">Text2</p>",
+      "question": "Văn bản nào có màu đỏ khi định nghĩa: <style>p.c1 {color: red;}</style> và mã nguồn: <div class=\"c1\">Text1</div> <p class=\"c1\">Text2</p>",
       "options": [
         { "text": "Text1", "isCorrect": false },
         { "text": "Text2", "isCorrect": true },
@@ -194,7 +194,7 @@
     },
     {
       "id": 18,
-      "question": "Câu 3. Các văn bản nào có màu đỏ <style> div>div {color:red} </style> <div>Text1 <div class=\"c1\">Text2</div> <p>Text3</p> <span>Text4</span> </div>",
+      "question": "Các văn bản nào có màu đỏ khi định nghĩa: <style> div>div {color:red} </style> và mã nguồn: <div>Text1 <div class=\"c1\">Text2</div> <p>Text3</p> <span>Text4</span> </div>",
       "options": [
         { "text": "Text1", "isCorrect": false },
         { "text": "Text2", "isCorrect": true },
@@ -205,7 +205,7 @@
     },
     {
       "id": 19,
-      "question": "Câu 4. Văn bản nào có màu đỏ <style> div[class^=c]{ color:red } </style> <div class=\"c1\">Text1</div> <div class=\"c2\">Text2</div> <div class=\"c\">Text3</div>",
+      "question": "Văn bản nào có màu đỏ khi định nghĩa: <style> div[class^=c]{ color:red } </style> và mã nguồn: <div class=\"c1\">Text1</div> <div class=\"c2\">Text2</div> <div class=\"c\">Text3</div>",
       "options": [
         { "text": "text1, text2, text3", "isCorrect": true },
         { "text": "text3", "isCorrect": false },
@@ -216,7 +216,7 @@
     },
     {
       "id": 20,
-      "question": "Câu 5. Văn bản nào có màu đỏ <style> [id=my] {color:red} </style> <p id=\"my-Address\">Text1</p> <p id=\"my\">Text2</p> <p id=\"Bmy\">Text3</p>",
+      "question": "Văn bản nào có màu đỏ khi định nghĩa: <style> [id=my] {color:red} </style> và mã nguồn: <p id=\"my-Address\">Text1</p> <p id=\"my\">Text2</p> <p id=\"Bmy\">Text3</p>",
       "options": [
         { "text": "text1", "isCorrect": false },
         { "text": "text2", "isCorrect": true },
@@ -227,7 +227,7 @@
     },
     {
       "id": 21,
-      "question": "Câu 6. Sử dụng emmet trong vscode tạo ra mã html sau <form action=\"\" name=\"f1\"> <input type=\"text\" name=\"input1\"> <input type=\"text\" name=\"input2\"> </form>",
+      "question": "Sử dụng emmet trong vscode tạo ra mã html sau <form action=\"\" name=\"f1\"> <input type=\"text\" name=\"input1\"> <input type=\"text\" name=\"input2\"> </form>",
       "options": [
         { "text": "form[name=f1]>input.type=text&name=input$*2", "isCorrect": false },
         { "text": "form.name-fl>input[type=text][name='input$']*2", "isCorrect": false },
@@ -238,7 +238,7 @@
     },
     {
       "id": 22,
-      "question": "Câu 7. Sử dụng emmet trong vscode tạo ra mã html sau <div id=\"id1\"> <div class=\"c1\">text</div> <div class=\"c1\">text</div> </div>",
+      "question": "Sử dụng emmet trong vscode tạo ra mã html sau <div id=\"id1\"> <div class=\"c1\">text</div> <div class=\"c1\">text</div> </div>",
       "options": [
         { "text": "#id1>.c1*2>{text}", "isCorrect": false },
         { "text": "div#id1>div.c1*2>{text}", "isCorrect": false },
@@ -249,7 +249,7 @@
     },
     {
       "id": 23,
-      "question": "Câu 8. Đoạn văn bản nào sẽ có màu red <style> li:nth-child(2n+1){color:red} </style> <ul> <li>Text1</li> <li>Text2</li> <li>Text3</li> <li>Text4</li> </ul>",
+      "question": "Đoạn văn bản nào sẽ có màu red khi định nghĩa: <style> li:nth-child(2n+1){color:red} </style> và danh sách: <ul><li>Text1</li><li>Text2</li><li>Text3</li><li>Text4</li></ul>",
       "options": [
         { "text": "text1, text2", "isCorrect": false },
         { "text": "text2, text4", "isCorrect": false },
@@ -260,7 +260,7 @@
     },
     {
       "id": 24,
-      "question": "Câu 9. Đoạn văn bản nào sẽ có màu đỏ <style> li.c:nth-child(odd).c{color:red} </style> <ul> <li class=\"c\">Text2</li> <li class=\"c\">Text1</li> <li>Text3</li> <li>Text4</li> </ul>",
+      "question": "Đoạn văn bản nào sẽ có màu đỏ khi định nghĩa: <style> li.c:nth-child(odd).c{color:red} </style> và danh sách: <ul><li class=\"c\">Text2</li><li class=\"c\">Text1</li><li>Text3</li><li>Text4</li></ul>",
       "options": [
         { "text": "text1", "isCorrect": false },
         { "text": "text2", "isCorrect": true },
@@ -271,7 +271,7 @@
     },
     {
       "id": 25,
-      "question": "Câu 10. Đoạn văn bản nào hiển thị màu đỏ <style> li:last-child {color:red} </style> <ul> <li class=\"c\">Text1</li> <li class=\"c\">Text2</li> <li>Text3</li> </ul>",
+      "question": "Đoạn văn bản nào hiển thị màu đỏ khi định nghĩa: <style> li:last-child {color:red} </style> và danh sách: <ul><li class=\"c\">Text1</li><li class=\"c\">Text2</li><li>Text3</li></ul>",
       "options": [
         { "text": "Text1", "isCorrect": false },
         { "text": "Text2", "isCorrect": false },
@@ -282,9 +282,9 @@
     },
     {
       "id": 26,
-      "question": "Câu 11. Đoạn văn bản nào có mã màu đỏ <style> p~div{color:red} </style> <p>text4</p> <div> <p>Text1</p> <p>Text2</p> </div>",
+      "question": "Đoạn văn bản nào có màu đỏ khi định nghĩa: <style> p~div{color:red} </style> và mã nguồn: <p>text4</p> <div> <p>Text1</p> <p>Text2</p> </div>",
       "options": [
-        { "text": "Text1, tex2", "isCorrect": true },
+        { "text": "Text1, Text2", "isCorrect": true },
         { "text": "Text4", "isCorrect": false },
         { "text": "Cả a, b đúng", "isCorrect": false },
         { "text": "Cả a, b sai", "isCorrect": false }
@@ -293,7 +293,7 @@
     },
     {
       "id": 27,
-      "question": "Câu 12. Đoạn văn bản nào có màu đỏ <style> li:nth-child(odd), li:nth-child(even) {color:red} </style> <ul> <li>Text1</li> <li>Text2</li> <li>Text3</li> <li>Text4</li> </ul>",
+      "question": "Đoạn văn bản nào có màu đỏ khi định nghĩa: <style> li:nth-child(odd), li:nth-child(even) {color:red} </style> và danh sách 4 phần tử?",
       "options": [
         { "text": "text1, text3", "isCorrect": false },
         { "text": "text2, text4", "isCorrect": false },
@@ -304,29 +304,29 @@
     },
     {
       "id": 28,
-      "question": "Câu 13. Định nghĩa css: input:focus {background-color: red;}",
+      "question": "Định nghĩa CSS: input:focus {background-color: red;} có nghĩa là gì?",
       "options": [
-        { "text": "Những thẻ input khi nhận con trỏ sẽ có nên màu red", "isCorrect": true },
+        { "text": "Những thẻ input khi nhận con trỏ sẽ có nền màu red", "isCorrect": true },
         { "text": "Những thẻ input khi mất con trỏ sẽ có nền màu red", "isCorrect": false },
-        { "text": "Những thẻ input có class là focus sẽ có nên màu red", "isCorrect": false },
-        { "text": "Những thẻ input có id là focus sẽ có nên màu red", "isCorrect": false }
+        { "text": "Những thẻ input có class là focus sẽ có nền màu red", "isCorrect": false },
+        { "text": "Những thẻ input có id là focus sẽ có nền màu red", "isCorrect": false }
       ],
       "explanation": "Trạng thái :focus được kích hoạt khi phần tử (như ô input) được người dùng nhấp chuột vào hoặc dùng phím Tab di chuyển tới (tức là đang nhận con trỏ/focus)."
     },
     {
       "id": 29,
-      "question": "Câu 14. Thẻ nào hiển thị văn bản lớn nhất",
+      "question": "Thẻ tiêu đề nào hiển thị văn bản lớn nhất mặc định?",
       "options": [
-        { "text": "h1", "isCorrect": true },
-        { "text": "h2", "isCorrect": false },
-        { "text": "h6", "isCorrect": false },
+        { "text": "<h1>", "isCorrect": true },
+        { "text": "<h2>", "isCorrect": false },
+        { "text": "<h6>", "isCorrect": false },
         { "text": "Tất cả hiển thị giống nhau", "isCorrect": false }
       ],
       "explanation": "Hệ thống thẻ Heading trong HTML từ h1 đến h6, trong đó <h1> là tiêu đề chính, có kích thước hiển thị mặc định lớn nhất và quan trọng nhất đối với SEO."
     },
     {
       "id": 30,
-      "question": "Câu 15. Để upload một tập tin bằng form, thẻ form phải có thuộc tính",
+      "question": "Để upload một tập tin bằng form, thẻ form phải có các thuộc tính nào?",
       "options": [
         { "text": "enctype=\"multipart/form-data\" method=\"get\"", "isCorrect": false },
         { "text": "enctype=\"multipart/form-data\" method=\"post\"", "isCorrect": true },
@@ -337,7 +337,7 @@
     },
     {
       "id": 31,
-      "question": "Câu 16. Để hiển thị text1 và text2 cách nhau 2 khoảng trắng trên trình duyệt ( là ký hiệu khoảng trắng)",
+      "question": "Để hiển thị text1 và text2 cách nhau 2 khoảng trắng trên trình duyệt:",
       "options": [
         { "text": "text1 text2", "isCorrect": false },
         { "text": "text1&nbsp;&nbsp;text2", "isCorrect": true },
@@ -348,7 +348,7 @@
     },
     {
       "id": 32,
-      "question": "Câu 17. Để chèn hình 1.jpg trong thư mục cha vào trang html, mã html là",
+      "question": "Để chèn hình 1.jpg trong thư mục cha vào trang html hiện tại, mã html là:",
       "options": [
         { "text": "<img src=\"/1.jpg\">", "isCorrect": false },
         { "text": "<img src=\"1.jpg\">", "isCorrect": false },
@@ -359,7 +359,7 @@
     },
     {
       "id": 33,
-      "question": "Câu 18. Đâu là link tới zalo có số điện thoại 0903762699",
+      "question": "Đâu là link tới zalo có số điện thoại 0903762699?",
       "options": [
         { "text": "<a href=\"http://zalo.me/0903762699\">Zalo </a>", "isCorrect": true },
         { "text": "<a href=\"zalo.me/0903762699\">Zalo </a>", "isCorrect": false },
@@ -370,18 +370,18 @@
     },
     {
       "id": 34,
-      "question": "Câu 19. Chèn video v1.mp4 vào trang web",
+      "question": "Cách nào để chèn video v1.mp4 vào trang web?",
       "options": [
-        { "text": "<video src=\"1.mp4\"></video>", "isCorrect": false },
-        { "text": "<video> <source src=\"1.mp4\"> </video>", "isCorrect": false },
-        { "text": "<mp4 src=\"1.mp4\"></mp4>", "isCorrect": false },
-        { "text": "a, b đúng", "isCorrect": true }
+        { "text": "<video src=\"v1.mp4\"></video>", "isCorrect": false },
+        { "text": "<video> <source src=\"v1.mp4\"> </video>", "isCorrect": false },
+        { "text": "<mp4 src=\"v1.mp4\"></mp4>", "isCorrect": false },
+        { "text": "Cả a và b đều đúng", "isCorrect": true }
       ],
       "explanation": "HTML5 hỗ trợ khai báo file video bằng cách đặt thuộc tính src trực tiếp trong thẻ <video>, hoặc dùng thẻ con <source> đặt bên trong thẻ <video>."
     },
     {
       "id": 35,
-      "question": "Câu 20. Đâu là mã màu green",
+      "question": "Đâu là mã màu HEX của màu xanh lá cây thuần (green)?",
       "options": [
         { "text": "#0000ff", "isCorrect": false },
         { "text": "#ff0000", "isCorrect": false },
@@ -392,29 +392,29 @@
     },
     {
       "id": 36,
-      "question": "Câu 21. Để thiết lập hình nền cho table ta có thể",
+      "question": "Để thiết lập hình nền cho table ta có thể làm cách nào?",
       "options": [
         { "text": "Thiết lập thuộc tính background trong thẻ table", "isCorrect": true },
         { "text": "Thiết lập thuộc tính bgcolor trong thẻ table", "isCorrect": false },
         { "text": "Cả 2 a, b đúng", "isCorrect": false },
         { "text": "Cả 2 a, b sai", "isCorrect": false }
       ],
-      "explanation": "Thuộc tính 'background' trong thẻ HTML cũ dùng để chỉ định đường dẫn hình ảnh làm nền. (Trong khi đó 'bgcolor' chỉ dùng để đặt màu nền)."
+      "explanation": "Thuộc tính 'background' trong thẻ HTML cũ dùng để chỉ định đường dẫn hình ảnh làm nền cho bảng (table)."
     },
     {
       "id": 37,
-      "question": "Câu 22. Để tạo ô nhập liệu trên nhiều dòng, sử dụng code html nào?",
+      "question": "Để tạo ô nhập liệu trên nhiều dòng, sử dụng code html nào?",
       "options": [
         { "text": "<input type=\"text\">", "isCorrect": false },
         { "text": "<input type=\"multitext\">", "isCorrect": false },
-        { "text": "<textarea ></textarea>", "isCorrect": true },
+        { "text": "<textarea></textarea>", "isCorrect": true },
         { "text": "<text></text>", "isCorrect": false }
       ],
       "explanation": "Thẻ <textarea> dùng để tạo một khung văn bản cho phép người dùng nhập nội dung trên nhiều dòng."
     },
     {
       "id": 38,
-      "question": "Câu 23. Để chọn sẵn một option trong thẻ select, thì thẻ option phải có thuộc tính",
+      "question": "Để chọn sẵn một option trong thẻ select, thì thẻ option phải có thuộc tính gì?",
       "options": [
         { "text": "selected", "isCorrect": true },
         { "text": "checked", "isCorrect": false },
@@ -425,7 +425,7 @@
     },
     {
       "id": 39,
-      "question": "Câu 24. Để 2 thành phần radio của form chỉ được phép chọn một thì 2 thành phần này phải:",
+      "question": "Để các thành phần radio của form chỉ được phép chọn duy nhất một lựa chọn thì các thành phần này phải:",
       "options": [
         { "text": "Cùng giá trị id", "isCorrect": false },
         { "text": "Cùng giá trị class", "isCorrect": false },
@@ -436,17 +436,17 @@
     },
     {
       "id": 40,
-      "question": "Câu 25. Đoạn mã html có kết xuất ra trình duyệt x1²+x2=0 là",
+      "question": "Đoạn mã html có kết xuất ra trình duyệt x₁²+x₂=0 là:",
       "options": [
         { "text": "x<sup>1</sup><sub>2</sub>+x<sup>2</sup>=0", "isCorrect": false },
         { "text": "x<sub>1</sub><sup>2</sup>+x<sub>2</sub>=0", "isCorrect": true },
-        { "text": "cả a, b đúng", "isCorrect": false }
+        { "text": "Cả a, b đúng", "isCorrect": false }
       ],
       "explanation": "Thẻ <sub> dùng cho chỉ số dưới (Subscript - ví dụ số 1, 2) và thẻ <sup> dùng cho chỉ số trên (Superscript - ví dụ bình phương)."
     },
     {
       "id": 41,
-      "question": "Câu 26. Mã màu sau sẽ là màu gì? #ffffff",
+      "question": "Mã màu sau sẽ là màu gì? #ffffff",
       "options": [
         { "text": "white", "isCorrect": true },
         { "text": "black", "isCorrect": false },
@@ -457,7 +457,7 @@
     },
     {
       "id": 42,
-      "question": "Câu 27. Đâu là chú thích một dòng của css",
+      "question": "Đâu là chú thích một dòng hoặc nhiều dòng của CSS?",
       "options": [
         { "text": "/* và */", "isCorrect": true },
         { "text": "//", "isCorrect": false },
@@ -468,7 +468,7 @@
     },
     {
       "id": 43,
-      "question": "Câu 28. Khi sử dụng hình nên cho trang web, thuộc tính css nào xác định ảnh nền đứng yên hay di chuyên khi scroll",
+      "question": "Khi sử dụng hình nền cho trang web, thuộc tính CSS nào xác định ảnh nền đứng yên hay di chuyển khi scroll?",
       "options": [
         { "text": "background-attachment", "isCorrect": true },
         { "text": "background-position", "isCorrect": false },
@@ -479,7 +479,7 @@
     },
     {
       "id": 44,
-      "question": "Câu 29. Để hiển thị văn bản theo chữ in hoa, cần thiết lập trong thuộc tính:",
+      "question": "Để hiển thị văn bản theo kiểu chữ in hoa, cần thiết lập thuộc tính nào?",
       "options": [
         { "text": "letter-spacing", "isCorrect": false },
         { "text": "word-spacing", "isCorrect": false },
@@ -490,21 +490,21 @@
     },
     {
       "id": 45,
-      "question": "Câu 30. Để bo góc một đối tượng, trong css sử dụng thuộc tính",
+      "question": "Để bo góc một đối tượng, trong CSS sử dụng thuộc tính nào?",
       "options": [
         { "text": "border-style", "isCorrect": false },
         { "text": "border-width", "isCorrect": false },
-        { "text": "border-coner", "isCorrect": false },
+        { "text": "border-corner", "isCorrect": false },
         { "text": "border-radius", "isCorrect": true }
       ],
       "explanation": "border-radius là thuộc tính CSS dùng để tạo các đường viền bo tròn (bo góc) cho các phần tử trên trang web."
     },
     {
       "id": 46,
-      "question": "Câu 31. Để định khoảng cách từ border đến các đối tượng bên trong",
+      "question": "Để định khoảng cách từ border đến các đối tượng bên trong phần tử, ta dùng:",
       "options": [
         { "text": "padding", "isCorrect": true },
-        { "text": "marging", "isCorrect": false },
+        { "text": "margin", "isCorrect": false },
         { "text": "border-spacing", "isCorrect": false },
         { "text": "border-width", "isCorrect": false }
       ],
@@ -512,29 +512,29 @@
     },
     {
       "id": 47,
-      "question": "Câu 32. Để định khoảng cách từ border đến các đối tượng bên ngoài",
+      "question": "Để định khoảng cách từ border của đối tượng hiện tại đẩy xa các đối tượng bên ngoài, ta dùng:",
       "options": [
         { "text": "padding", "isCorrect": false },
-        { "text": "marging", "isCorrect": true },
+        { "text": "margin", "isCorrect": true },
         { "text": "border-spacing", "isCorrect": false },
-        { "text": "border-widt", "isCorrect": false }
+        { "text": "border-width", "isCorrect": false }
       ],
-      "explanation": "Margin là vùng đệm bên ngoài, tạo khoảng cách từ đường viền (border) của phần tử này đẩy phần tử khác ra xa. (Lưu ý: Đề gốc viết sai chính tả 'marging' thay vì 'margin')."
+      "explanation": "Margin là vùng đệm bên ngoài, tạo khoảng cách từ đường viền (border) của phần tử này đẩy phần tử khác ra xa."
     },
     {
       "id": 48,
-      "question": "Câu 33. Để load file my.css vào trang html, sử dụng lệnh",
+      "question": "Để load file style.css bên ngoài vào trang html, sử dụng lệnh nào?",
       "options": [
-        { "text": "<style src=my.css>", "isCorrect": false },
+        { "text": "<style src=\"style.css\">", "isCorrect": false },
         { "text": "<link rel=\"stylesheet\" href=\"style.css\">", "isCorrect": true },
         { "text": "<script href=\"style.css\">", "isCorrect": false },
-        { "text": "<style>my.css</style>", "isCorrect": false }
+        { "text": "<style>style.css</style>", "isCorrect": false }
       ],
       "explanation": "Cách tiêu chuẩn để nhúng file CSS bên ngoài (External CSS) là dùng thẻ <link> với thuộc tính rel=\"stylesheet\" và href trỏ tới file CSS."
     },
     {
       "id": 49,
-      "question": "Câu 34. Để định nghĩa một internal css, sử dụng tag",
+      "question": "Để định nghĩa một internal CSS, sử dụng thẻ nào?",
       "options": [
         { "text": "<style>", "isCorrect": true },
         { "text": "<link>", "isCorrect": false },
@@ -545,73 +545,73 @@
     },
     {
       "id": 50,
-      "question": "Câu 35. Thuộc tính html nào để định nghĩa inline css",
+      "question": "Thuộc tính HTML nào để định nghĩa inline CSS?",
       "options": [
-        { "text": "Css", "isCorrect": false },
-        { "text": "Font", "isCorrect": false },
-        { "text": "Class", "isCorrect": false },
-        { "text": "Style", "isCorrect": true }
+        { "text": "css", "isCorrect": false },
+        { "text": "font", "isCorrect": false },
+        { "text": "class", "isCorrect": false },
+        { "text": "style", "isCorrect": true }
       ],
       "explanation": "Inline CSS được áp dụng bằng cách viết trực tiếp thuộc tính 'style' vào bên trong thẻ mở HTML (ví dụ: <div style=\"color: red;\">)."
     },
     {
       "id": 51,
-      "question": "Câu 36. Đâu là cú pháp đúng của css",
+      "question": "Đâu là cú pháp đúng của CSS?",
       "options": [
-        { "text": "Body {color=red}", "isCorrect": false },
-        { "text": "Body:color=red", "isCorrect": false },
-        { "text": "Body {color:red}", "isCorrect": true },
-        { "text": "Body={color:red}", "isCorrect": false }
+        { "text": "body {color=red}", "isCorrect": false },
+        { "text": "body:color=red", "isCorrect": false },
+        { "text": "body {color:red}", "isCorrect": true },
+        { "text": "body={color:red}", "isCorrect": false }
       ],
       "explanation": "Cú pháp chuẩn của CSS gồm: Bộ chọn (Selector) tiếp nối là cặp ngoặc nhọn {}, bên trong chứa Cặp Thuộc tính: Giá trị cách nhau bởi dấu hai chấm."
     },
     {
       "id": 52,
-      "question": "Câu 37. Thuộc tính css nào quy định màu nên",
+      "question": "Thuộc tính CSS nào quy định màu nền?",
       "options": [
-        { "text": "Bgcolor", "isCorrect": false },
-        { "text": "Background-color", "isCorrect": true },
-        { "text": "Bg-color", "isCorrect": false },
+        { "text": "bgcolor", "isCorrect": false },
+        { "text": "background-color", "isCorrect": true },
+        { "text": "bg-color", "isCorrect": false },
         { "text": "Tất cả sai", "isCorrect": false }
       ],
       "explanation": "Trong CSS, background-color là thuộc tính chính xác để thiết lập màu sắc cho vùng nền của một phần tử."
     },
     {
       "id": 53,
-      "question": "Câu 38. Thuộc tính css thay đổi kích thước văn bản là",
+      "question": "Thuộc tính CSS thay đổi kích thước văn bản là gì?",
       "options": [
-        { "text": "Font-weight", "isCorrect": false },
-        { "text": "Text-size", "isCorrect": false },
-        { "text": "Size", "isCorrect": false },
-        { "text": "Font-size", "isCorrect": true }
+        { "text": "font-weight", "isCorrect": false },
+        { "text": "text-size", "isCorrect": false },
+        { "text": "size", "isCorrect": false },
+        { "text": "font-size", "isCorrect": true }
       ],
       "explanation": "Thuộc tính font-size chuyên dùng để kiểm soát và điều chỉnh độ lớn (kích thước) của font chữ."
     },
     {
       "id": 54,
-      "question": "Câu 39. Để bỏ gạch chân trong văn bản liên kết",
+      "question": "Để bỏ gạch chân mặc định trong văn bản liên kết, ta dùng lệnh CSS nào?",
       "options": [
         { "text": "a {underline:none}", "isCorrect": false },
-        { "text": "a{text-decoration: none;}", "isCorrect": true },
-        { "text": "a{text-decoration: no-underline;}", "isCorrect": false },
-        { "text": "a decoration: no-underline;}", "isCorrect": false }
+        { "text": "a {text-decoration: none;}", "isCorrect": true },
+        { "text": "a {text-decoration: no-underline;}", "isCorrect": false },
+        { "text": "a {decoration: no-underline;}", "isCorrect": false }
       ],
       "explanation": "Thuộc tính text-decoration: none; được sử dụng để loại bỏ các kiểu trang trí của văn bản, bao gồm cả đường gạch chân (underline) mặc định của thẻ <a>."
     },
     {
       "id": 55,
-      "question": "Câu 40. Để viết hoa các ký tự đầu tiên của từ, sử dụng css",
+      "question": "Để viết hoa các ký tự đầu tiên của mỗi từ, sử dụng thuộc tính CSS nào?",
       "options": [
-        { "text": "text-transform: Upper;", "isCorrect": false },
+        { "text": "text-transform: upper;", "isCorrect": false },
         { "text": "text-transform: capitalize;", "isCorrect": true },
-        { "text": "transform: capitalize:", "isCorrect": false },
-        { "text": "text: capitalize:", "isCorrect": false }
+        { "text": "transform: capitalize;", "isCorrect": false },
+        { "text": "text: capitalize;", "isCorrect": false }
       ],
       "explanation": "Thuộc tính text-transform: capitalize; sẽ tự động in hoa chữ cái đầu tiên của từng từ trong câu văn bản."
     },
     {
       "id": 56,
-      "question": "Câu 41. Để in đậm văn bản, trong css sử dụng",
+      "question": "Để in đậm văn bản, trong CSS sử dụng thuộc tính nào?",
       "options": [
         { "text": "weight: bold;", "isCorrect": false },
         { "text": "font-bold: bold;", "isCorrect": false },
@@ -622,9 +622,9 @@
     },
     {
       "id": 57,
-      "question": "Câu 42. Để hiện thị boder: top border = 10 pixels, bottom border = 5 pixels, left border = 20 pixels, right border = 1 pixel? Css định nghĩa là",
+      "question": "Để hiển thị border: top = 10px, bottom = 5px, left = 20px, right = 1px? CSS viết tắt đúng là:",
       "options": [
-        { "text": "border-width:10px 5px 1px 20px", "isCorrect": false },
+        { "text": "border-width: 10px 5px 1px 20px", "isCorrect": false },
         { "text": "border-width: 10px 20px 5px 1px", "isCorrect": false },
         { "text": "border-width: 10px 5px 20px 10px", "isCorrect": false },
         { "text": "border-width: 10px 1px 5px 20px", "isCorrect": true }
@@ -633,9 +633,9 @@
     },
     {
       "id": 58,
-      "question": "Câu 43. Bootstrap là:",
+      "question": "Bootstrap là:",
       "options": [
-        { "text": "một framework CSS dùng cho mục đích phát triên web front-end", "isCorrect": true },
+        { "text": "một framework CSS dùng cho mục đích phát triển web front-end", "isCorrect": true },
         { "text": "Một thư viện javascript để thiết kế các trang web", "isCorrect": false },
         { "text": "Một chuẩn thiết kế frontend", "isCorrect": false },
         { "text": "Tất cả đều đúng", "isCorrect": false }
@@ -644,80 +644,652 @@
     },
     {
       "id": 59,
-      "question": "Câu 44. Trong frontend, thuật ngữ responsive là một thuật ngữ chỉ",
+      "question": "Trong frontend, thuật ngữ responsive chỉ cái gì?",
       "options": [
-        { "text": "Một website có thể hiển thị và tương thích với nhiều thiết bị", "isCorrect": true },
-        { "text": "Một website có thể hiển thị giống nhau trên tất cả các thiết bị", "isCorrect": false },
+        { "text": "Một website có thể hiển thị linh hoạt và tương thích trên nhiều thiết bị có kích thước màn hình khác nhau", "isCorrect": true },
+        { "text": "Một website hiển thị giống hệt nhau mà không thay đổi bố cục trên tất cả thiết bị", "isCorrect": false },
         { "text": "Một website được chia ra nhiều trang html tương ứng với từng thiết bị truy cập", "isCorrect": false },
-        { "text": "Khả năng load nhanh các trang web tùy vào từng thiết bị", "isCorrect": false }
+        { "text": "Khả năng tải cực nhanh các trang web tùy vào từng thiết bị", "isCorrect": false }
       ],
       "explanation": "Responsive Web Design (Thiết kế web đáp ứng) là khả năng trang web tự động điều chỉnh bố cục để phù hợp và hiển thị đẹp mắt trên nhiều kích thước màn hình (PC, Tablet, Mobile)."
     },
     {
       "id": 60,
-      "question": "Câu 45. Để mở 1 link trong tab hoặc cửa sổ mới trong trình duyệt:",
+      "question": "Để mở một link trong một tab mới hoàn toàn của trình duyệt, ta dùng:",
       "options": [
         { "text": "<a href=\"url\" target=\"_blank\">text</a>", "isCorrect": true },
-        { "text": "<a href=\"url\" target=\"_new\" >text</a>", "isCorrect": false },
+        { "text": "<a href=\"url\" target=\"_new\">text</a>", "isCorrect": false },
         { "text": "<a href=\"url\" open=\"_blank\">text</a>", "isCorrect": false },
-        { "text": "<a href=\"url\" open=\"_new\" >text</a>", "isCorrect": false }
+        { "text": "<a href=\"url\" open=\"_new\">text</a>", "isCorrect": false }
       ],
-      "explanation": "Tương tự một câu hỏi trước, thuộc tính target=\"_blank\" là thuộc tính hợp lệ trong HTML báo trình duyệt mở đường link ở tab mới."
+      "explanation": "Thuộc tính target=\"_blank\" chỉ thị trình duyệt mở đường dẫn được gán trong thẻ <a> ở một cửa sổ/tab mới."
     },
     {
       "id": 61,
-      "question": "Câu 46. Đâu là các phần tử mặc định là inline?",
+      "question": "Đâu là phần tử có kiểu hiển thị mặc định là inline?",
       "options": [
-        { "text": "Div", "isCorrect": false },
-        { "text": "P", "isCorrect": false },
-        { "text": "Span", "isCorrect": true },
+        { "text": "div", "isCorrect": false },
+        { "text": "p", "isCorrect": false },
+        { "text": "span", "isCorrect": true },
         { "text": "h1", "isCorrect": false }
       ],
       "explanation": "Thẻ <span> là thẻ nội tuyến (inline), nó hiển thị trên cùng một dòng với các phần tử khác bên cạnh thay vì tự rớt xuống dòng như block element."
     },
     {
       "id": 62,
-      "question": "Câu 47. Đâu là các phần tử hiển thị mặc định block?",
+      "question": "Các phần tử nào sau đây có kiểu hiển thị mặc định là block?",
       "options": [
-        { "text": "Div", "isCorrect": false },
-        { "text": "P", "isCorrect": false },
-        { "text": "H1", "isCorrect": false },
-        { "text": "Tất cả đúng", "isCorrect": true }
+        { "text": "div", "isCorrect": false },
+        { "text": "p", "isCorrect": false },
+        { "text": "h1", "isCorrect": false },
+        { "text": "Tất cả đều đúng", "isCorrect": true }
       ],
       "explanation": "Các phần tử Khối (Block element) sẽ luôn bắt đầu ở một dòng mới và chiếm toàn bộ chiều rộng có sẵn. Div, P, H1 đến H6 đều là thẻ block."
     },
     {
       "id": 63,
-      "question": "Câu 48. Để tạo ra danh sách có đánh số thứ tự, ta sử dụng cặp thẻ",
+      "question": "Để tạo ra danh sách có đánh số thứ tự tăng dần, ta sử dụng cặp thẻ nào?",
       "options": [
         { "text": "ul, li", "isCorrect": false },
         { "text": "ol, li", "isCorrect": true },
         { "text": "ul, listItem", "isCorrect": false },
-        { "text": "ol. listItem", "isCorrect": false }
+        { "text": "ol, listItem", "isCorrect": false }
       ],
       "explanation": "Thẻ <ol> (Ordered List) kết hợp với các thẻ con <li> (List Item) dùng để tạo một danh sách được sắp xếp bằng số hoặc chữ cái tự động."
     },
     {
       "id": 64,
-      "question": "Câu 49. Đâu là thẻ tạo checkbox",
+      "question": "Mã HTML nào dùng để tạo ra một ô checkbox?",
       "options": [
-        { "text": "<input type=\"check\" >", "isCorrect": false },
+        { "text": "<input type=\"check\">", "isCorrect": false },
         { "text": "<input type=\"checkbox\">", "isCorrect": true },
-        { "text": "<checkbox >", "isCorrect": false },
-        { "text": "<check >", "isCorrect": false }
+        { "text": "<checkbox>", "isCorrect": false },
+        { "text": "<check>", "isCorrect": false }
       ],
       "explanation": "Để tạo ra ô chọn có dạng hình vuông (nhiều lựa chọn), thẻ <input> phải có thuộc tính type=\"checkbox\"."
     },
     {
       "id": 65,
-      "question": "Câu 50. Để tạo một drop-down list (combobox), sử dụng thẻ",
+      "question": "Để tạo một drop-down list (combobox), sử dụng thẻ mở đầu nào?",
       "options": [
-        { "text": "<Select>", "isCorrect": true },
+        { "text": "<select>", "isCorrect": true },
         { "text": "<combobox>", "isCorrect": false },
-        { "text": "<Input type=list>", "isCorrect": false },
+        { "text": "<input type=\"list\">", "isCorrect": false },
         { "text": "<list>", "isCorrect": false }
       ],
       "explanation": "Thẻ <select> là chuẩn HTML để tạo danh sách xổ xuống (drop-down list) cho người dùng nhấp chọn vào các option bên trong."
+    },
+    {
+      "id": 66,
+      "question": "Đâu là tag tạo ra một danh sách đứng đầu bằng số tăng dần?",
+      "options": [
+        { "text": "<ul>", "isCorrect": false },
+        { "text": "<list>", "isCorrect": false },
+        { "text": "<ol>", "isCorrect": true },
+        { "text": "<dl>", "isCorrect": false }
+      ],
+      "explanation": "Thẻ <ol> (Ordered List) được dùng để tạo ra một danh sách có thứ tự (được đánh số tăng dần)."
+    },
+    {
+      "id": 67,
+      "question": "Trong danh sách không thứ tự <ul>, nếu muốn sử dụng một hình ảnh riêng làm biểu tượng đầu dòng thì phải làm sao?",
+      "options": [
+        { "text": "Thay đổi thuộc tính type", "isCorrect": false },
+        { "text": "Thay đổi thuộc tính src", "isCorrect": false },
+        { "text": "Dùng thuộc tính CSS list-style-image", "isCorrect": true },
+        { "text": "Không thay đổi được bằng CSS", "isCorrect": false }
+      ],
+      "explanation": "Trong CSS, thuộc tính list-style-image cho phép bạn chỉ định một hình ảnh để làm biểu tượng (bullet) cho các mục danh sách <li>."
+    },
+    {
+      "id": 68,
+      "question": "Thuộc tính màu nền trong thẻ <table> ở phiên bản HTML cũ là gì?",
+      "options": [
+        { "text": "background", "isCorrect": false },
+        { "text": "bordercolor", "isCorrect": false },
+        { "text": "bgcolor", "isCorrect": true },
+        { "text": "background-image", "isCorrect": false }
+      ],
+      "explanation": "Trong HTML truyền thống, thuộc tính bgcolor được sử dụng để thiết lập màu nền cho thẻ <table>. Tuy nhiên, hiện nay nên dùng thuộc tính CSS background-color để thay thế."
+    },
+    {
+      "id": 69,
+      "question": "Để nối (trộn) các ô theo chiều ngang trong bảng <table>, ta dùng thuộc tính nào?",
+      "options": [
+        { "text": "colpan", "isCorrect": false },
+        { "text": "colspan", "isCorrect": true },
+        { "text": "rowpan", "isCorrect": false },
+        { "text": "rowspan", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính colspan (column span) trong thẻ <td> hoặc <th> được sử dụng để gộp nhiều ô liền kề nhau trên cùng một hàng (chiều ngang)."
+    },
+    {
+      "id": 70,
+      "question": "Để thiết lập chuỗi gợi ý mờ \"Nhập số\" hiển thị bên trong ô nhập liệu văn bản, ta dùng thuộc tính nào?",
+      "options": [
+        { "text": "value=\"Nhập số\"", "isCorrect": false },
+        { "text": "comment=\"Nhập số\"", "isCorrect": false },
+        { "text": "hint=\"Nhập số\"", "isCorrect": false },
+        { "text": "placeholder=\"Nhập số\"", "isCorrect": true }
+      ],
+      "explanation": "Thuộc tính placeholder trong thẻ <input> hiển thị một chuỗi gợi ý mờ cho người dùng biết cần nhập gì. Gợi ý này sẽ tự động biến mất khi người dùng bắt đầu nhập dữ liệu."
+    },
+    {
+      "id": 71,
+      "question": "Trong trường nhập liệu văn bản <input type=\"text\" />, thuộc tính nào dùng để giới hạn số lượng ký tự tối đa được nhập vào?",
+      "options": [
+        { "text": "size", "isCorrect": false },
+        { "text": "maxlength", "isCorrect": true },
+        { "text": "width", "isCorrect": false },
+        { "text": "value", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính maxlength quy định số lượng ký tự tối đa mà người dùng được phép nhập vào ô input."
+    },
+    {
+      "id": 72,
+      "question": "Trong HTML5, để bắt buộc người dùng nhập liệu cho textbox trước khi gửi form, ta thêm thuộc tính nào?",
+      "options": [
+        { "text": "required", "isCorrect": true },
+        { "text": "notempty", "isCorrect": false },
+        { "text": "not-empty", "isCorrect": false },
+        { "text": "no-empty", "isCorrect": false }
+      ],
+      "explanation": "Trong HTML5, thuộc tính required là một thuộc tính boolean dùng để bắt buộc người dùng phải điền thông tin vào trường dữ liệu trước khi gửi form."
+    },
+    {
+      "id": 73,
+      "question": "Để không cho người dùng thay đổi giá trị của ô textbox nhưng vẫn gửi dữ liệu đó lên server khi submit form, ta sử dụng thuộc tính nào?",
+      "options": [
+        { "text": "enable=\"false\"", "isCorrect": false },
+        { "text": "locked", "isCorrect": false },
+        { "text": "readonly", "isCorrect": true },
+        { "text": "change-value=\"no\"", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính readonly ngăn chặn người dùng chỉnh sửa nội dung của trường nhập liệu nhưng dữ liệu đó vẫn được gửi đi khi submit form. Trái lại, thuộc tính disabled sẽ vừa chặn chỉnh sửa vừa không gửi dữ liệu."
+    },
+    {
+      "id": 74,
+      "question": "Thuộc tính nào của thẻ <option> xác định phần tử đó sẽ được chọn làm mặc định?",
+      "options": [
+        { "text": "checked", "isCorrect": false },
+        { "text": "default", "isCorrect": false },
+        { "text": "selected", "isCorrect": true },
+        { "text": "Tất cả đều sai", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính selected dùng trong thẻ <option> để đánh dấu tùy chọn này sẽ được chọn mặc định trong thẻ <select>."
+    },
+    {
+      "id": 75,
+      "question": "Để định dạng font chữ là Times New Roman bằng CSS, cách khai báo nào sau đây là chuẩn xác nhất?",
+      "options": [
+        { "text": "font-face: \"Times New Roman\"", "isCorrect": false },
+        { "text": "font-face: Times New Roman", "isCorrect": false },
+        { "text": "font-family: \"Times New Roman\"", "isCorrect": true },
+        { "text": "font-family: Times New Roman", "isCorrect": false }
+      ],
+      "explanation": "Khi định dạng font chữ bằng thuộc tính font-family trong CSS, nếu tên font có chứa khoảng trắng (như Times New Roman), ta bắt buộc phải đặt tên font đó trong dấu nháy kép hoặc nháy đơn."
+    },
+    {
+      "id": 76,
+      "question": "Cách viết CSS sau thuộc loại nào? <style type=\"text/css\">p{color: red; align: center;}</style>",
+      "options": [
+        { "text": "Inline CSS", "isCorrect": false },
+        { "text": "External CSS", "isCorrect": false },
+        { "text": "Internal CSS", "isCorrect": true },
+        { "text": "Cả 3 đều sai", "isCorrect": false }
+      ],
+      "explanation": "Cách viết CSS đặt trong cặp thẻ <style> ... </style> nằm trực tiếp ở trang HTML gọi là Internal CSS (CSS nội bộ)."
+    },
+    {
+      "id": 77,
+      "question": "Thuộc tính nào của CSS dùng để chặn hình ảnh nền không bị lặp lại?",
+      "options": [
+        { "text": "background-repeat: no-repeat;", "isCorrect": true },
+        { "text": "image-repeat;", "isCorrect": false },
+        { "text": "background-norepeat;", "isCorrect": false },
+        { "text": "bgimage-repeat", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính background-repeat: no-repeat; ngăn hình nền không bị lặp lại (theo cả chiều dọc lẫn chiều ngang)."
+    },
+    {
+      "id": 78,
+      "question": "Trong CSS, để định cấu hình vị trí căn lề cho hình nền, ta sử dụng thuộc tính nào?",
+      "options": [
+        { "text": "background-align", "isCorrect": false },
+        { "text": "background-center", "isCorrect": false },
+        { "text": "background-attachment", "isCorrect": false },
+        { "text": "background-position", "isCorrect": true }
+      ],
+      "explanation": "Thuộc tính background-position trong CSS được sử dụng để xác định vị trí ban đầu của hình ảnh nền (ví dụ: center, top left, 50% 50%)."
+    },
+    {
+      "id": 79,
+      "question": "Thuộc tính nào trong CSS dùng để định dạng chữ in nghiêng?",
+      "options": [
+        { "text": "text-decoration", "isCorrect": false },
+        { "text": "text-transform", "isCorrect": false },
+        { "text": "italic", "isCorrect": false },
+        { "text": "font-style", "isCorrect": true }
+      ],
+      "explanation": "Để thiết lập chữ in nghiêng bằng CSS, ta sử dụng thuộc tính font-style với giá trị là italic hoặc oblique."
+    },
+    {
+      "id": 80,
+      "question": "Thuộc tính nào trong CSS dùng để thiết lập mức độ mờ (trong suốt) cho đối tượng?",
+      "options": [
+        { "text": "opacity", "isCorrect": true },
+        { "text": "blur", "isCorrect": false },
+        { "text": "transparent", "isCorrect": false },
+        { "text": "Tất cả đều sai", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính opacity trong CSS xác định mức độ trong suốt (làm mờ) của một phần tử, nhận giá trị từ 0.0 (hoàn toàn trong suốt) đến 1.0 (hoàn toàn hiển thị rõ)."
+    },
+    {
+      "id": 81,
+      "question": "Thuộc tính nào trong CSS dùng để thay đổi kích cỡ của chữ?",
+      "options": [
+        { "text": "font-size", "isCorrect": true },
+        { "text": "font-style", "isCorrect": false },
+        { "text": "text-style", "isCorrect": false },
+        { "text": "text-size", "isCorrect": false }
+      ],
+      "explanation": "Trong CSS, thuộc tính font-size được dùng để điều chỉnh kích thước hiển thị của văn bản (ví dụ: px, em, rem, %)."
+    },
+    {
+      "id": 82,
+      "question": "Chọn thứ tự định dạng các trạng thái liên kết đúng nhất để tránh bị lỗi ghi đè trong CSS?",
+      "options": [
+        { "text": "link > hover > visited > active", "isCorrect": false },
+        { "text": "link > active > visited > hover", "isCorrect": false },
+        { "text": "link > visited > hover > active", "isCorrect": true },
+        { "text": "Tất cả đều sai", "isCorrect": false }
+      ],
+      "explanation": "Thứ tự định nghĩa các trạng thái của thẻ <a> (pseudo-classes) trong CSS bắt buộc phải tuân theo quy tắc LVHA: :link, :visited, :hover, :active để đảm bảo các kiểu hiển thị ghi đè chính xác."
+    },
+    {
+      "id": 83,
+      "question": "Thuộc tính CSS nào định dạng liên kết (anchor tag) không có gạch chân bên dưới?",
+      "options": [
+        { "text": "text-align: none", "isCorrect": false },
+        { "text": "text-decoration: none", "isCorrect": true },
+        { "text": "text-decoration: underline", "isCorrect": false },
+        { "text": "text-underline: none", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính text-decoration: none; dùng để loại bỏ các kiểu trang trí văn bản gạch chân mặc định của thẻ liên kết <a>."
+    },
+    {
+      "id": 84,
+      "question": "Thuộc tính CSS nào định dạng đối tượng hiển thị như một khối và nằm ở một hàng riêng biệt?",
+      "options": [
+        { "text": "display: none", "isCorrect": false },
+        { "text": "display: block", "isCorrect": true },
+        { "text": "display: inline", "isCorrect": false },
+        { "text": "display: inline-block", "isCorrect": false }
+      ],
+      "explanation": "Giá trị display: block biến một phần tử thành phần tử dạng khối, chiếm toàn bộ chiều rộng hàng và tự động đẩy phần tử kế tiếp xuống một dòng mới."
+    },
+    {
+      "id": 85,
+      "question": "Thuộc tính CSS nào định dạng bo góc một đối tượng với giá trị cụ thể?",
+      "options": [
+        { "text": "border-corner", "isCorrect": false },
+        { "text": "border-radius", "isCorrect": true },
+        { "text": "border-radian", "isCorrect": false },
+        { "text": "border-rounded", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính border-radius được sử dụng để bo tròn các góc viền của một phần tử."
+    },
+    {
+      "id": 86,
+      "question": "Khi khai báo 4 giá trị cho thuộc tính border-radius, thứ tự định dạng các góc sẽ là gì?",
+      "options": [
+        { "text": "top-left, bottom-right, top-right, bottom-left", "isCorrect": false },
+        { "text": "top-left, top-right, bottom-right, bottom-left", "isCorrect": true },
+        { "text": "top-right, bottom-right, bottom-left, top-left", "isCorrect": false },
+        { "text": "top-left, top-right, bottom-left, bottom-right", "isCorrect": false }
+      ],
+      "explanation": "Khi khai báo rút gọn 4 giá trị cho thuộc tính border-radius, thứ tự áp dụng bắt đầu từ góc trên bên trái (top-left) và quay theo chiều kim đồng hồ: top-left, top-right, bottom-right, bottom-left."
+    },
+    {
+      "id": 87,
+      "question": "Thuộc tính CSS nào làm chữ trong thẻ <p> trở thành chữ in đậm?",
+      "options": [
+        { "text": "p {text-size: bold;}", "isCorrect": false },
+        { "text": "p {font-size: bold;}", "isCorrect": false },
+        { "text": "p {font-style: bold;}", "isCorrect": false },
+        { "text": "p {font-weight: bold;}", "isCorrect": true }
+      ],
+      "explanation": "Trong CSS, thuộc tính font-weight: bold; được sử dụng để thiết lập kiểu chữ in đậm cho phần tử."
+    },
+    {
+      "id": 88,
+      "question": "Để thiết lập ảnh nền luôn đứng yên một chỗ và không trôi đi khi scroll trang web, ta dùng cấu hình nào?",
+      "options": [
+        { "text": "background-attachment: fix", "isCorrect": false },
+        { "text": "background-attachment: fixed", "isCorrect": true },
+        { "text": "background-attachment: scroll", "isCorrect": false },
+        { "text": "Tất cả đều sai", "isCorrect": false }
+      ],
+      "explanation": "Giá trị fixed của thuộc tính background-attachment giúp ảnh nền được ghim cố định so với viewport và không bị cuộn đi khi người dùng cuộn trang."
+    },
+    {
+      "id": 89,
+      "question": "Để quy định margin trên là 10px, dưới là 0px, hai bên trái phải là 20px thì dùng cách viết rút gọn nào?",
+      "options": [
+        { "text": "margin: 10px 0px 20px;", "isCorrect": false },
+        { "text": "margin: 10px 0px 20px 20px;", "isCorrect": false },
+        { "text": "margin: 10px 20px 0px;", "isCorrect": true },
+        { "text": "Tất cả đều sai", "isCorrect": false }
+      ],
+      "explanation": "Khi viết tắt với 3 giá trị 'margin: [Top] [Right/Left] [Bottom]', trình duyệt sẽ hiểu là: trên bằng 10px, hai bên trái phải bằng 20px, dưới bằng 0px."
+    },
+    {
+      "id": 90,
+      "question": "Thuộc tính nào trong CSS dùng để định dạng độ dày của border?",
+      "options": [
+        { "text": "border-size", "isCorrect": false },
+        { "text": "border-width", "isCorrect": true },
+        { "text": "border-height", "isCorrect": false },
+        { "text": "border-weight", "isCorrect": false }
+      ],
+      "explanation": "Trong CSS, thuộc tính border-width xác định độ dày (độ rộng) đường viền của phần tử."
+    },
+    {
+      "id": 91,
+      "question": "Để định dạng màu nền cho dòng đầu tiên (tr) của bảng có id là 'tb11', mã CSS nào sau đây là đúng?",
+      "options": [
+        { "text": "table tr {background-color: #F00;}", "isCorrect": false },
+        { "text": "#tb11 tr:1 {background-color: #F00;}", "isCorrect": false },
+        { "text": "#tb11 tr:first {background-color: #F00;}", "isCorrect": false },
+        { "text": "#tb11 tr:first-child {background-color: #F00;}", "isCorrect": true }
+      ],
+      "explanation": "Selector #tb11 tr:first-child chọn phần tử tr đầu tiên (con đầu tiên) bên trong bảng có id #tb11 để tô màu nền đỏ."
+    },
+    {
+      "id": 92,
+      "question": "Để định dạng chuyển văn bản thành chữ in hoa toàn bộ, ta dùng thuộc tính nào trong CSS?",
+      "options": [
+        { "text": "text-transform", "isCorrect": true },
+        { "text": "text-format", "isCorrect": false },
+        { "text": "text-decoration", "isCorrect": false },
+        { "text": "uppercase", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính text-transform với các giá trị như uppercase (chữ in hoa) hoặc capitalize (in hoa chữ cái đầu) được sử dụng để điều chỉnh định dạng viết hoa của chữ."
+    },
+    {
+      "id": 93,
+      "question": "Pseudo-class nào trong CSS dùng để loại trừ hoặc chọn phần tử không khớp với điều kiện nhất định?",
+      "options": [
+        { "text": ":not()", "isCorrect": true },
+        { "text": ":checked", "isCorrect": false },
+        { "text": ":first-of-type", "isCorrect": false },
+        { "text": ":last-child", "isCorrect": false }
+      ],
+      "explanation": "Pseudo-class phủ định :not(selector) dùng để chọn tất cả các phần tử ngoại trừ phần tử khớp với bộ chọn (selector) bên trong dấu ngoặc."
+    },
+    {
+      "id": 94,
+      "question": "Pseudo-class nào trong CSS được sử dụng để chọn phần tử khi nó đang ở trạng thái kích hoạt (đang nhấp giữ chuột)?",
+      "options": [
+        { "text": ":active", "isCorrect": true },
+        { "text": ":hover", "isCorrect": false },
+        { "text": ":focus", "isCorrect": false },
+        { "text": ":checked", "isCorrect": false }
+      ],
+      "explanation": "Trạng thái :active được kích hoạt tại thời điểm người dùng nhấn (click) và giữ chuột trên phần tử."
+    },
+    {
+      "id": 95,
+      "question": "Bộ kết hợp (Combinator) nào dùng để chọn phần tử là con trực tiếp (con cấp 1) của phần tử khác?",
+      "options": [
+        { "text": "E F", "isCorrect": false },
+        { "text": "E - F", "isCorrect": false },
+        { "text": "E > F", "isCorrect": true },
+        { "text": "E + F", "isCorrect": false }
+      ],
+      "explanation": "Toán tử > (Child combinator) dùng để chọn các phần tử F là con trực tiếp (con cấp 1) của phần tử E."
+    },
+    {
+      "id": 96,
+      "question": "Bộ chọn h1 + p trong CSS sẽ nhắm tới đối tượng nào?",
+      "options": [
+        { "text": "Mọi thẻ p nằm bên trong thẻ h1", "isCorrect": false },
+        { "text": "Thẻ p là con trực tiếp của thẻ h1", "isCorrect": false },
+        { "text": "Thẻ p nằm liền kề ngay sau thẻ h1 và có cùng cấp bậc", "isCorrect": true },
+        { "text": "Thẻ p bất kỳ xuất hiện trên trang web", "isCorrect": false }
+      ],
+      "explanation": "Toán tử + (Adjacent sibling combinator) chọn phần tử p đứng ngay liền kề sau phần tử h1 và phải có cùng một thẻ cha."
+    },
+    {
+      "id": 97,
+      "question": "Bộ chọn 'section > article' có ý nghĩa gì trong CSS?",
+      "options": [
+        { "text": "Chọn phần tử article là con trực tiếp của section", "isCorrect": true },
+        { "text": "Chọn phần tử article là hậu duệ bất kỳ của section", "isCorrect": false },
+        { "text": "Chọn phần tử article nằm kề sau section", "isCorrect": false },
+        { "text": "Chọn section là con của article", "isCorrect": false }
+      ],
+      "explanation": "Sử dụng toán tử > biểu thị chọn các thẻ con trực tiếp của thẻ cha đứng trước."
+    },
+    {
+      "id": 98,
+      "question": "Giá trị mặc định của thuộc tính float trong CSS là gì?",
+      "options": [
+        { "text": "left", "isCorrect": false },
+        { "text": "right", "isCorrect": false },
+        { "text": "none", "isCorrect": true },
+        { "text": "inherit", "isCorrect": false }
+      ],
+      "explanation": "Mặc định các phần tử không bị đẩy nổi sang trái hay phải, nên giá trị mặc định của thuộc tính float là none."
+    },
+    {
+      "id": 99,
+      "question": "Khi một phần tử con được thiết lập float (left hoặc right), phần tử cha của nó sẽ bị ảnh hưởng như thế nào?",
+      "options": [
+        { "text": "Tự động co giãn chiều cao để bao gồm hoàn toàn phần tử con float", "isCorrect": false },
+        { "text": "Bị sụp đổ chiều cao và không tự động bao phủ lấy phần tử con float đó", "isCorrect": true },
+        { "text": "Tự động đổi position sang relative", "isCorrect": false },
+        { "text": "Tự động đổi position sang absolute", "isCorrect": false }
+      ],
+      "explanation": "Vì phần tử float bị rút ra khỏi luồng bố cục bình thường, phần tử cha của nó sẽ bị sụp đổ chiều cao (height collapse) và không tự co giãn bao lấy phần tử con đó trừ khi được giải phóng (clear/clearfix)."
+    },
+    {
+      "id": 100,
+      "question": "Thuộc tính nào được sử dụng để điều chỉnh khoảng cách giữa các ký tự (chữ cái) trong CSS?",
+      "options": [
+        { "text": "letter-spacing", "isCorrect": true },
+        { "text": "character-spacing", "isCorrect": false },
+        { "text": "text-spacing", "isCorrect": false },
+        { "text": "word-spacing", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính letter-spacing tăng hoặc giảm khoảng cách giữa các chữ cái (ký tự) trong khối văn bản."
+    },
+    {
+      "id": 101,
+      "question": "Cặp thuộc tính CSS nào dưới đây giúp ghim một phần tử cố định ở góc dưới cùng bên phải của màn hình trình duyệt khi scroll?",
+      "options": [
+        { "text": "position: fixed; bottom: 0; right: 0;", "isCorrect": true },
+        { "text": "position: absolute; bottom: 0; right: 0;", "isCorrect": false },
+        { "text": "position: static; bottom: 0; right: 0;", "isCorrect": false },
+        { "text": "position: relative; bottom: 0; right: 0;", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính position: fixed cố định phần tử so với viewport cửa sổ trình duyệt, kết hợp bottom: 0; right: 0; để đặt cố định ở góc dưới cùng bên phải."
+    },
+    {
+      "id": 102,
+      "question": "Thuộc tính CSS nào được sử dụng để ẩn hoàn toàn một phần tử và giải phóng không gian chiếm chỗ của nó?",
+      "options": [
+        { "text": "display: none;", "isCorrect": true },
+        { "text": "display: hidden;", "isCorrect": false },
+        { "text": "visibility: hidden;", "isCorrect": false },
+        { "text": "visibility: none;", "isCorrect": false }
+      ],
+      "explanation": "Mặc dù cả display: none và visibility: hidden đều làm ẩn phần tử, nhưng display: none là thuộc tính triệt để nhất vì nó ẩn hoàn toàn và giải phóng không gian chiếm chỗ của phần tử đó."
+    },
+    {
+      "id": 103,
+      "question": "Selector nào chọn tất cả các phần tử có class là 'example'?",
+      "options": [
+        { "text": "example", "isCorrect": false },
+        { "text": "#example", "isCorrect": false },
+        { "text": ".example", "isCorrect": true },
+        { "text": "*example", "isCorrect": false }
+      ],
+      "explanation": "Trong CSS, ký tự dấu chấm '.' được sử dụng trước tên lớp để đại diện cho class selector."
+    },
+    {
+      "id": 104,
+      "question": "Selector nào dùng để chọn phần tử <p> đầu tiên của phần tử cha chứa nó?",
+      "options": [
+        { "text": "p:first-child", "isCorrect": true },
+        { "text": "p:first-of-type", "isCorrect": false },
+        { "text": "p:only-child", "isCorrect": false },
+        { "text": "p:last-child", "isCorrect": false }
+      ],
+      "explanation": "Pseudo-class :first-child chọn phần tử con đầu tiên của thẻ cha, ở đây là phần tử <p> là con đầu tiên."
+    },
+    {
+      "id": 105,
+      "question": "Selector nào được sử dụng để chọn phần tử <li> ở vị trí lẻ trong một danh sách?",
+      "options": [
+        { "text": "li:nth-child(even)", "isCorrect": false },
+        { "text": "li:nth-of-type(odd)", "isCorrect": false },
+        { "text": "li:nth-child(odd)", "isCorrect": true },
+        { "text": "li:odd-child", "isCorrect": false }
+      ],
+      "explanation": "Giá trị odd (lẻ) truyền vào bộ chọn :nth-child() sẽ nhắm tới các phần tử con nằm ở thứ tự lẻ (1, 3, 5, 7, v.v.)."
+    },
+    {
+      "id": 106,
+      "question": "Khi một phần tử được gán thuộc tính position: fixed, phần tử đó sẽ:",
+      "options": [
+        { "text": "Di chuyển tự do cùng với trang khi người dùng cuộn", "isCorrect": false },
+        { "text": "Vẫn luôn cố định ở cùng một vị trí trên màn hình khi cuộn trang", "isCorrect": true },
+        { "text": "Căn chỉnh tương đối so với phần tử cha gần nhất có thuộc tính position là relative", "isCorrect": false },
+        { "text": "Bị ẩn hoàn toàn khỏi giao diện người dùng", "isCorrect": false }
+      ],
+      "explanation": "Phần tử định vị fixed sẽ nằm cố định so với khung nhìn viewport trình duyệt và không di chuyển khi cuộn trang."
+    },
+    {
+      "id": 107,
+      "question": "Để ngăn chặn các phần tử khác tràn lên bao quanh một phần tử đã được float trước đó, ta sử dụng thuộc tính nào?",
+      "options": [
+        { "text": "clear", "isCorrect": true },
+        { "text": "float", "isCorrect": false },
+        { "text": "overflow", "isCorrect": false },
+        { "text": "display", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính clear (với các giá trị left, right, both) được sử dụng để dọn dẹp (ngăn chặn) việc tràn văn bản/phần tử xung quanh các đối tượng đang float trước đó."
+    },
+    {
+      "id": 108,
+      "question": "Responsive Web Design (RWD) nghĩa là gì?",
+      "options": [
+        { "text": "Kỹ thuật tối ưu hóa website chỉ dành riêng cho các dòng máy tính để bàn", "isCorrect": false },
+        { "text": "Phương pháp thiết kế giúp trang web tự động tối ưu hóa hiển thị tốt trên nhiều thiết bị và kích thước màn hình khác nhau", "isCorrect": true },
+        { "text": "Một công nghệ bảo mật thông tin trên môi trường mạng Internet", "isCorrect": false },
+        { "text": "Kiến trúc hệ thống máy chủ giúp tăng tốc tải trang web", "isCorrect": false }
+      ],
+      "explanation": "Responsive Web Design (RWD) là giải pháp thiết kế bố cục linh hoạt sử dụng Media Queries giúp giao diện tự động tối ưu hóa hiển thị trên mọi loại màn hình từ di động đến PC."
+    },
+    {
+      "id": 109,
+      "question": "Câu lệnh @media nào dưới đây áp dụng các quy tắc CSS chỉ khi chiều rộng màn hình thiết bị nhỏ hơn hoặc bằng 600px?",
+      "options": [
+        { "text": "@media screen and (max-width: 600px) { ... }", "isCorrect": true },
+        { "text": "@media screen and (min-width: 600px) { ... }", "isCorrect": false },
+        { "text": "@media screen and (max-height: 600px) { ... }", "isCorrect": false },
+        { "text": "@media screen and (min-height: 600px) { ... }", "isCorrect": false }
+      ],
+      "explanation": "Biểu thức max-width: 600px lọc ra tất cả các màn hình có chiều rộng tối đa là 600px (tức nhỏ hơn hoặc bằng 600px)."
+    },
+    {
+      "id": 110,
+      "question": "Media query nào dưới đây áp dụng các quy tắc CSS khi chiều cao trình duyệt tối thiểu là 400px VÀ chiều rộng tối đa là 600px?",
+      "options": [
+        { "text": "@media screen and (min-height: 400px) and (max-width: 600px) { ... }", "isCorrect": true },
+        { "text": "@media screen and (height: 400px) and (width: 600px) { ... }", "isCorrect": false },
+        { "text": "@media screen and (min-height: 400px) and (width: 600px) { ... }", "isCorrect": false },
+        { "text": "@media screen and (height: 400px) and (max-width: 600px) { ... }", "isCorrect": false }
+      ],
+      "explanation": "Để chỉ định 'chiều cao ít nhất 400px' ta sử dụng min-height: 400px, kết hợp với 'chiều rộng nhỏ hơn hoặc bằng 600px' là max-width: 600px bằng toán tử and."
+    },
+    {
+      "id": 111,
+      "question": "Thuộc tính CSS nào được sử dụng để xác định tỷ lệ phình to mở rộng của một phần tử con bên trong Flexbox container?",
+      "options": [
+        { "text": "flex-grow", "isCorrect": true },
+        { "text": "flex-shrink", "isCorrect": false },
+        { "text": "flex-basis", "isCorrect": false },
+        { "text": "flex", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính flex-grow chỉ định tỉ lệ phân chia không gian còn dư trong Flex Container để phần tử đó tự phình to ra."
+    },
+    {
+      "id": 112,
+      "question": "Thuộc tính 'flex-shrink' trong CSS Flexbox được dùng để xác định điều gì?",
+      "options": [
+        { "text": "Tỷ lệ mở rộng của phần tử", "isCorrect": false },
+        { "text": "Tỷ lệ co lại của phần tử con khi không gian container bị thiếu", "isCorrect": true },
+        { "text": "Kích thước cơ sở ban đầu của phần tử", "isCorrect": false },
+        { "text": "Thứ tự sắp xếp các phần tử con", "isCorrect": false }
+      ],
+      "explanation": "Thuộc tính flex-shrink xác định tỷ lệ co hẹp lại của phần tử con khi kích thước của Flex Container nhỏ hơn tổng kích thước của các phần tử con."
+    },
+    {
+      "id": 113,
+      "question": "Trong JavaScript, từ khóa nào được sử dụng để khai báo một hằng số (biến không thể thay đổi giá trị sau khi gán)?",
+      "options": [
+        { "text": "let", "isCorrect": false },
+        { "text": "const", "isCorrect": true },
+        { "text": "var", "isCorrect": false },
+        { "text": "static", "isCorrect": false }
+      ],
+      "explanation": "Từ khóa const (constant - hằng số) dùng để khai báo một biến có phạm vi khối block và giá trị của biến này không thể gán lại sau đó."
+    },
+    {
+      "id": 114,
+      "question": "Kết quả của biểu thức 2 + \"2\" trong JavaScript là gì?",
+      "options": [
+        { "text": "24.4", "isCorrect": false },
+        { "text": "\"22\"", "isCorrect": true },
+        { "text": "NaN", "isCorrect": false },
+        { "text": "undefined", "isCorrect": false }
+      ],
+      "explanation": "Khi thực hiện phép toán cộng giữa một số và một chuỗi ký tự, JavaScript sẽ tự động ép kiểu số thành chuỗi rồi thực hiện phép nối chuỗi (concatenation). Kết quả thu được là chuỗi \"22\"."
+    },
+    {
+      "id": 115,
+      "question": "Giá trị của biến s sau phép toán sau là bao nhiêu? var s = parseInt(\"12.5A\") + parseFloat('12.4A')",
+      "options": [
+        { "text": "24.4", "isCorrect": true },
+        { "text": "24.5", "isCorrect": false },
+        { "text": "24.9", "isCorrect": false },
+        { "text": "\"125124\"", "isCorrect": false }
+      ],
+      "explanation": "parseInt(\"12.5A\") phân tích chuỗi và trả về số nguyên 12. parseFloat('12.4A') phân tích chuỗi và trả về số thực 12.4. Tổng của chúng là 12 + 12.4 = 24.4."
+    },
+    {
+      "id": 116,
+      "question": "Đoạn mã nào dưới đây dùng để khởi tạo một đối tượng (Object) trống trong JavaScript?",
+      "options": [
+        { "text": "const dog", "isCorrect": false },
+        { "text": "const dog = new Object()", "isCorrect": true },
+        { "text": "const dog = Object.create(())", "isCorrect": false },
+        { "text": "Tất cả đều sai", "isCorrect": false }
+      ],
+      "explanation": "Cách khởi tạo đối tượng bằng từ khóa 'new Object()' là cú pháp chuẩn để tạo ra một đối tượng trống mới trong JavaScript (bên cạnh cách viết rút gọn phổ biến hơn là dấu ngoặc nhọn {})."
+    },
+    {
+      "id": 117,
+      "question": "Trong danh sách định nghĩa (<dl>) của HTML, cặp thẻ nào dưới đây dùng để hiển thị thuật ngữ và phần mô tả thuật ngữ tương ứng?",
+      "options": [
+        { "text": "dt và dd", "isCorrect": true },
+        { "text": "ul và li", "isCorrect": false },
+        { "text": "ol và li", "isCorrect": false },
+        { "text": "table và tr", "isCorrect": false }
+      ],
+      "explanation": "Thẻ <dt> (definition term) dùng để chỉ định thuật ngữ cần định nghĩa, và thẻ <dd> (definition description) dùng để viết mô tả chi tiết cho thuật ngữ đó bên trong thẻ cha <dl>."
     }
   ]
 }
